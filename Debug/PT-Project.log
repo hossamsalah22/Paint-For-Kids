@@ -1,0 +1,26 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  GUI.cpp
+  image.cpp
+D:\ITI\01- Still\C++(OOP)\Project Framework\CMUgraphicsLib\image.cpp(115,29): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  CSquare.cpp
+  CHexagon.cpp
+  CFigure.cpp
+  CEllipse.cpp
+  ApplicationManager.cpp
+  ActionToPlay.cpp
+  ActionToDraw.cpp
+  ActionSendBack.cpp
+  ActionSelect.cpp
+  ActionSave.cpp
+  ActionLoad.cpp
+  ActionChangeFill.cpp
+  ActionChangeColor.cpp
+  ActionChangeBackground.cpp
+  ActionBringFront.cpp
+  ActionAddSquare.cpp
+  ActionAddHexagon.cpp
+  ActionAddEllipse.cpp
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Project Framework\Debug\PT Project.exe

@@ -1,0 +1,5 @@
+BLACK   GREEN   WHITE   
+3
+CEllipse    1    297  241  871  459  BLACK   NO_FILL
+CEllipse    21   240  239  680  116  BLACK   NO_FILL
+CSquare     0    372  88   767  499  BLACK   NO_FILL
