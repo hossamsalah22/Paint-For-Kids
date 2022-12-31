@@ -104,6 +104,7 @@ ActionType GUI::MapInputToActionType() const
 			case ITM_BACK: return SEND_BACK;
 			case ITM_FRNT: return BRNG_FRNT;
 			case ITM_TO_PLAY: return TO_PLAY;
+			case ITM_DEL: return DEL;
 			case ITM_EXIT: return EXIT;	
 			
 			default: return EMPTY;	//A click on empty place in desgin toolbar

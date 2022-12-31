@@ -19,6 +19,7 @@
 #include "Actions\ActionBringFront.h"
 #include "Actions\ActionToPlay.h"
 #include "Actions\ActionToDraw.h"
+#include "Actions\ActionDelete.h"
 #include<fstream>
 #include <string>
 
@@ -62,14 +63,16 @@ public:
 	color ColorObject(string) const;
 	void SaveAll(ofstream& Out);
 
-
+	int DeleteFigure(); //// Action Delete Figures  
+	void shiftFigList(int _figCount); // After delete figure shift elements and delete null
 	void ClearFigList();
 	CFigure* DrawnFigs(int i) const;
 	int getFigCount() const;
 
 	// -- Interface Management Functions	
 	GUI *GetGUI() const; //Return pointer to the interface
-	void UpdateInterface() const;	//Redraws all the drawing window	
+	void UpdateInterface() const;	//Redraws all the drawing window
+	CFigure* getSelected();
 	
 	
 };

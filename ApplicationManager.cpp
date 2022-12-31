@@ -86,6 +86,9 @@ Action* ApplicationManager::CreateAction(ActionType ActType)
 		case BRNG_FRNT: //Send a figure to the Front of all figures
 			newAct = new ActionBringFront(this);
 			break;
+		case DEL:
+			newAct = new ActionDelete(this);
+			break;
 		case TO_PLAY:
 			newAct = new ActionToPlay(this);
 			break;
@@ -345,12 +348,22 @@ void ApplicationManager::ClearFigList()
 	FigCount = 0;
 }
 
+
+CFigure* ApplicationManager::getSelected()
+{
+	int index = getSelectedFigure();
+	if (index >= 0 && index < FigCount) {
+		return FigList[index];
+	}
+	return NULL;
+}
+
+
 // Return index of selected figure 
 int ApplicationManager::getSelectedFigure()
 {
 	int selectedFiguresCount = 0;
 	int index = -1;
-
 	for (int i = 0; i < FigCount; i++)
 	{
 		if (FigList[i]->IsSelected())
@@ -359,10 +372,39 @@ int ApplicationManager::getSelectedFigure()
 			selectedFiguresCount++;
 		}
 	}
-
 	if (selectedFiguresCount == 1)
 		return index;
 	return -1;
+}
+
+
+//==================================================================================//
+//							Delete Figure											//
+//==================================================================================//
+
+
+// -- For  Figure Deleted 
+int ApplicationManager::DeleteFigure()
+{
+	for (int i = 0; i < FigCount; i++)
+	{
+		if (FigList[i]->IsSelected())
+		{
+			delete FigList[i];
+			FigList[i] = NULL;
+			FigCount--;
+			return i;
+		}
+	}
+
+}
+// After delete figure shift elements and delete null
+void ApplicationManager::shiftFigList(int _figCount)
+{
+	for (int j = _figCount; j < FigCount; j++)
+	{
+		FigList[j] = FigList[j + 1];
+	}
 }
 
 
@@ -403,6 +445,8 @@ void ApplicationManager::BringToFront(int selectedIndex)
 GUI *ApplicationManager::GetGUI() const
 {	return pGUI; }
 ////////////////////////////////////////////////////////////////////////////////////
+// 
+// 
 //Destructor
 ApplicationManager::~ApplicationManager()
 {

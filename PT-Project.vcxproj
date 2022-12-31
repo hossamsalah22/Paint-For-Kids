@@ -134,6 +134,7 @@
     <ClCompile Include="Actions\ActionChangeBackground.cpp" />
     <ClCompile Include="Actions\ActionChangeColor.cpp" />
     <ClCompile Include="Actions\ActionChangeFill.cpp" />
+    <ClCompile Include="Actions\ActionDelete.cpp" />
     <ClCompile Include="Actions\ActionLoad.cpp" />
     <ClCompile Include="Actions\ActionSave.cpp" />
     <ClCompile Include="Actions\ActionSelect.cpp" />
@@ -193,6 +194,7 @@
     <ClInclude Include="Actions\ActionChangeBackground.h" />
     <ClInclude Include="Actions\ActionChangeColor.h" />
     <ClInclude Include="Actions\ActionChangeFill.h" />
+    <ClInclude Include="Actions\ActionDelete.h" />
     <ClInclude Include="Actions\ActionLoad.h" />
     <ClInclude Include="Actions\ActionSave.h" />
     <ClInclude Include="Actions\ActionSelect.h" />

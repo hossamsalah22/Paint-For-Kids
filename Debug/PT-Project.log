@@ -1,26 +1,15 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  GUI.cpp
-  image.cpp
-D:\ITI\01- Still\C++(OOP)\Project Framework\CMUgraphicsLib\image.cpp(115,29): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  main.cpp
-  CSquare.cpp
-  CHexagon.cpp
-  CFigure.cpp
-  CEllipse.cpp
   ApplicationManager.cpp
-  ActionToPlay.cpp
-  ActionToDraw.cpp
-  ActionSendBack.cpp
-  ActionSelect.cpp
-  ActionSave.cpp
-  ActionLoad.cpp
-  ActionChangeFill.cpp
-  ActionChangeColor.cpp
-  ActionChangeBackground.cpp
-  ActionBringFront.cpp
-  ActionAddSquare.cpp
-  ActionAddHexagon.cpp
-  ActionAddEllipse.cpp
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(199,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(202,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(203,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(224,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(226,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(227,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(232,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(234,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(235,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(156,8): warning C4101: 'p': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(401): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Project Framework\Debug\PT Project.exe
