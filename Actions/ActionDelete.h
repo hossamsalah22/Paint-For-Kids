@@ -8,7 +8,7 @@ class ActionDelete : public Action
 public:
 	ActionDelete(ApplicationManager* pApp);
 
-	//Add Delete to the ApplicationManager
+	//Add Square to the ApplicationManager
 	virtual void Execute();
 };
 #endif

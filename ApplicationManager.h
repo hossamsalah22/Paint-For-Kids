@@ -17,8 +17,6 @@
 #include "Actions\ActionLoad.h"
 #include "Actions\ActionSendBack.h"
 #include "Actions\ActionBringFront.h"
-#include "Actions\ActionToPlay.h"
-#include "Actions\ActionToDraw.h"
 #include "Actions\ActionDelete.h"
 #include<fstream>
 #include <string>
@@ -47,7 +45,7 @@ public:
 	// -- Action-Related Functions
 	Action* CreateAction(ActionType);
 	void ExecuteAction(Action*&) ; //Execute an action
-	int DisplayMessageBox(); //Display message On Exit
+	
 	// -- Figures Management Functions
 	void AddFigure(CFigure* pFig); //Adds a new figure to the FigList
 	CFigure *GetFigure(int x, int y) const; //Search for a figure given a point inside the figure
@@ -62,19 +60,17 @@ public:
 	string colorString(color) const;
 	color ColorObject(string) const;
 	void SaveAll(ofstream& Out);
-
-	int DeleteFigure(); //// Action Delete Figures  
-	void shiftFigList(int _figCount); // After delete figure shift elements and delete null
 	void ClearFigList();
 	CFigure* DrawnFigs(int i) const;
 	int getFigCount() const;
-
+	//Delete
+	void Loop(CFigure*);
 	// -- Interface Management Functions	
 	GUI *GetGUI() const; //Return pointer to the interface
-	void UpdateInterface() const;	//Redraws all the drawing window
+	void UpdateInterface() const;	//Redraws all the drawing window	
 	CFigure* getSelected();
-	
-	
+	int DeleteFigure(); //// Action Delete Figures  
+	void shiftFigList(int _figCount); // After delete figure shift elements and delete null
 };
 
 #endif

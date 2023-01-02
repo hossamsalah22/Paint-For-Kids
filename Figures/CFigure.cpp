@@ -43,30 +43,30 @@ void CFigure::ChngFillStts(bool isFilled)
 
 string CFigure::ColorString(color ClrObj) const  //Convert from Color Type to String Type
 {
-	if (ClrObj == WHITE) return "WHITE";
-	else if (ClrObj == BLACK) return "BLACK";
-	else if (ClrObj == BROWN) return "BROWN";
-	else if (ClrObj == PURPLE) return "PURPLE";
-	else if (ClrObj == PINK) return "PINK";
-	else if (ClrObj == RED) return "RED";
-	else if (ClrObj == ORANGE) return "ORANGE";
-	else if (ClrObj == YELLOW) return "YELLOW";
-	else if (ClrObj == GREEN) return "GREEN";
-	else if (ClrObj == BLUE) return "BLUE";
+	if (ClrObj == CUSTOMCOLOR1) return "CUSTOMCOLOR1";
+	else if (ClrObj == CUSTOMCOLOR2) return "CUSTOMCOLOR2";
+	else if (ClrObj == CUSTOMCOLOR3) return "CUSTOMCOLOR3";
+	else if (ClrObj == CUSTOMCOLOR4) return "CUSTOMCOLOR4";
+	else if (ClrObj == CUSTOMCOLOR5) return "CUSTOMCOLOR5";
+	else if (ClrObj == CUSTOMCOLOR6) return "CUSTOMCOLOR6";
+	else if (ClrObj == CUSTOMCOLOR7) return "CUSTOMCOLOR7";
+	else if (ClrObj == CUSTOMCOLOR8) return "CUSTOMCOLOR8";
+	else if (ClrObj == CUSTOMCOLOR9) return "CUSTOMCOLOR9";
+	else if (ClrObj == CUSTOMCOLOR10) return "CUSTOMCOLOR10";
 	else return "BLUE";
 }
 
 color CFigure::ColorObject(string ClrStr) const  //Convert from string to color object
 {
-	if (ClrStr == "WHITE") return WHITE;
-	else if (ClrStr == "BLACK") return BLACK;
-	else if (ClrStr == "BROWN") return BROWN;
-	else if (ClrStr == "PURPLE") return PURPLE;
-	else if (ClrStr == "PINK") return PINK;
-	else if (ClrStr == "RED") return RED;
-	else if (ClrStr == "ORANGE") return ORANGE;
-	else if (ClrStr == "YELLOW") return YELLOW;
-	else if (ClrStr == "GREEN") return GREEN;
-	else if (ClrStr == "BLUE") return BLUE;
+	if (ClrStr == "CUSTOMCOLOR1") return CUSTOMCOLOR1;
+	else if (ClrStr == "CUSTOMCOLOR2") return CUSTOMCOLOR2;
+	else if (ClrStr == "CUSTOMCOLOR3") return CUSTOMCOLOR3;
+	else if (ClrStr == "CUSTOMCOLOR4") return CUSTOMCOLOR4;
+	else if (ClrStr == "CUSTOMCOLOR5") return CUSTOMCOLOR5;
+	else if (ClrStr == "CUSTOMCOLOR6") return CUSTOMCOLOR6;
+	else if (ClrStr == "CUSTOMCOLOR7") return CUSTOMCOLOR7;
+	else if (ClrStr == "CUSTOMCOLOR8") return CUSTOMCOLOR8;
+	else if (ClrStr == "CUSTOMCOLOR9") return CUSTOMCOLOR9;
+	else if (ClrStr == "CUSTOMCOLOR10") return CUSTOMCOLOR10;
 	return BLUE;
 }

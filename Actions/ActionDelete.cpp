@@ -12,15 +12,16 @@ ActionDelete::ActionDelete(ApplicationManager* pApp) :Action(pApp)
 void ActionDelete::Execute()
 {
 	GUI* pGUI = pManager->GetGUI();
-	if (pManager->getSelected() != NULL)
+	if (pManager->getSelected() == NULL)
 	{
-		int figNumber = pManager->DeleteFigure();
-		pManager->shiftFigList(figNumber);
-		pGUI->ClearDrawArea();
-		//pManager->UpdateInterface();
-		pGUI->PrintMessage("Deleted Successfully");
+		pGUI->PrintMessage("Select a shape before you can perform this action");
 	}
 	else {
-		pGUI->PrintMessage("Select a shape before you can perform this action");
+		while (pManager->getSelected() != NULL) {
+			int figNumber = pManager->DeleteFigure();
+			pManager->shiftFigList(figNumber);
+			pGUI->ClearDrawArea();
+			pGUI->PrintMessage("Deleted Successfully");
+		}
 	}
 }

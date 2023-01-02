@@ -18,6 +18,6 @@ void ActionSendBack::Execute()
 		pGUI->ClearDrawArea();
 	}
 	else {
-		pGUI->PrintMessage("Select only one shape before you can perform this action");
+		pGUI->PrintMessage("Select a shape before you can perform this action");
 	}
 }

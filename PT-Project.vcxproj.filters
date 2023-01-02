@@ -181,12 +181,6 @@
     <ClCompile Include="Actions\ActionBringFront.cpp">
       <Filter>Action Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\ActionToPlay.cpp">
-      <Filter>Action Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="Actions\ActionToDraw.cpp">
-      <Filter>Action Classes</Filter>
-    </ClCompile>
     <ClCompile Include="Actions\ActionDelete.cpp">
       <Filter>Action Classes</Filter>
     </ClCompile>
@@ -308,12 +302,6 @@
       <Filter>Action Classes</Filter>
     </ClInclude>
     <ClInclude Include="Actions\ActionBringFront.h">
-      <Filter>Action Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Actions\ActionToPlay.h">
-      <Filter>Action Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Actions\ActionToDraw.h">
       <Filter>Action Classes</Filter>
     </ClInclude>
     <ClInclude Include="Actions\ActionDelete.h">

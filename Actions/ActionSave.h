@@ -2,13 +2,12 @@
 #define ACTION_SAVE_H
 
 #include "Action.h"
-#include "..\ApplicationManager.h"
-#include "..\Figures\CFigure.h"
+#include"..\ApplicationManager.h"
+#include"..\Figures\CFigure.h"
 #include "..\GUI\GUI.h"
-#include <fstream>
+#include<fstream>
 #include <string>
-#include <iostream>
-#include <iomanip>
+#include<iostream>
 using namespace std;
 
 class ActionSave : public Action

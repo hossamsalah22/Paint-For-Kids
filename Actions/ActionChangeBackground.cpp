@@ -30,16 +30,16 @@ void ActionChangeBackground::Execute()
 		int colorOrder = P.x / UI.MenuItemWidth;
 		switch (colorOrder)
 		{
-		case 0: pGUI->setCrntBackgroundColor(WHITE); break;
-		case 1: pGUI->setCrntBackgroundColor(BLACK); break;
-		case 2: pGUI->setCrntBackgroundColor(BROWN); break;
-		case 3: pGUI->setCrntBackgroundColor(PURPLE); break;
-		case 4: pGUI->setCrntBackgroundColor(PINK); break;
-		case 5: pGUI->setCrntBackgroundColor(RED); break;
-		case 6: pGUI->setCrntBackgroundColor(ORANGE); break;
-		case 7: pGUI->setCrntBackgroundColor(YELLOW); break;
-		case 8: pGUI->setCrntBackgroundColor(GREEN); break;
-		case 9: pGUI->setCrntBackgroundColor(BLUE); break;
+		case 0: pGUI->setCrntBackgroundColor(CUSTOMCOLOR1); break;
+		case 1: pGUI->setCrntBackgroundColor(CUSTOMCOLOR2); break;
+		case 2: pGUI->setCrntBackgroundColor(CUSTOMCOLOR3); break;
+		case 3: pGUI->setCrntBackgroundColor(CUSTOMCOLOR4); break;
+		case 4: pGUI->setCrntBackgroundColor(CUSTOMCOLOR5); break;
+		case 5: pGUI->setCrntBackgroundColor(CUSTOMCOLOR6); break;
+		case 6: pGUI->setCrntBackgroundColor(CUSTOMCOLOR7); break;
+		case 7: pGUI->setCrntBackgroundColor(CUSTOMCOLOR8); break;
+		case 8: pGUI->setCrntBackgroundColor(CUSTOMCOLOR9); break;
+		case 9: pGUI->setCrntBackgroundColor(CUSTOMCOLOR10); break;
 		}
 	}
 

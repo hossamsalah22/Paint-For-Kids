@@ -80,35 +80,16 @@ Action* ApplicationManager::CreateAction(ActionType ActType)
 		case LOAD:
 			newAct = new ActionLoad(this, FigCount);
 			break;
+		case DEL:
+			newAct= new ActionDelete(this);
+			break;
 		case SEND_BACK:	//Send a figure to the back of all figures
 			newAct = new ActionSendBack(this);
 			break;
 		case BRNG_FRNT: //Send a figure to the Front of all figures
 			newAct = new ActionBringFront(this);
 			break;
-		case DEL:
-			newAct = new ActionDelete(this);
-			break;
-		case TO_PLAY:
-			newAct = new ActionToPlay(this);
-			break;
-		/*	//Play Mode Actions//
-		case P_H_TYPE:
-			newAct = new PickByType(this);
-			break;
-
-		case P_H_FILL:
-			newAct = new PickByFill(this);
-			break;
-		case P_H_BOTH:
-			newAct = new PickByBoth(this);
-			break;*/
-		case TO_DRAW:
-			newAct = new ActionToDraw(this);
-			break;
-			// Rest of Draw
 		case EXIT:
-			DisplayMessageBox();
 			break;
 		
 		case STATUS:	//a click on the status bar ==> no action
@@ -278,32 +259,32 @@ void ApplicationManager::UpdateFigureFill(color _color, bool isFilled) const //U
 //Convert from color object to string to save
 string ApplicationManager::colorString(color ClrObj) const
 {
-	if (ClrObj == WHITE) return "WHITE";
-	else if (ClrObj == BLACK) return "BLACK";
-	else if (ClrObj == BROWN) return "BROWN";
-	else if (ClrObj == PURPLE) return "PURPLE";
-	else if (ClrObj == PINK) return "PINK";
-	else if (ClrObj == RED) return "RED";
-	else if (ClrObj == ORANGE) return "ORANGE";
-	else if (ClrObj == YELLOW) return "YELLOW";
-	else if (ClrObj == GREEN) return "GREEN";
-	else if (ClrObj == BLUE) return "BLUE";
-	else return "BLUE";
+	if (ClrObj == CUSTOMCOLOR1) return "CUSTOMCOLOR1";
+	else if (ClrObj == CUSTOMCOLOR2) return "CUSTOMCOLOR2";
+	else if (ClrObj == CUSTOMCOLOR3) return "CUSTOMCOLOR3";
+	else if (ClrObj == CUSTOMCOLOR4) return "CUSTOMCOLOR4";
+	else if (ClrObj == CUSTOMCOLOR5) return "CUSTOMCOLOR5";
+	else if (ClrObj == CUSTOMCOLOR6) return "CUSTOMCOLOR6";
+	else if (ClrObj == CUSTOMCOLOR7) return "CUSTOMCOLOR7";
+	else if (ClrObj == CUSTOMCOLOR8) return "CUSTOMCOLOR8";
+	else if (ClrObj == CUSTOMCOLOR9) return "CUSTOMCOLOR9";
+	else if (ClrObj == CUSTOMCOLOR10) return "CUSTOMCOLOR10";
+	else return "WHITE";
 }
 //Convert from string to color object to load
 color ApplicationManager::ColorObject(string ClrStr) const
 {
-	if (ClrStr == "WHITE") return WHITE;
-	else if (ClrStr == "BLACK") return BLACK;
-	else if (ClrStr == "BROWN") return BROWN;
-	else if (ClrStr == "PURPLE") return PURPLE;
-	else if (ClrStr == "PINK") return PINK;
-	else if (ClrStr == "RED") return RED;
-	else if (ClrStr == "ORANGE") return ORANGE;
-	else if (ClrStr == "YELLOW") return YELLOW;
-	else if (ClrStr == "GREEN") return GREEN;
-	else if (ClrStr == "BLUE") return BLUE;
-	else return BLUE;
+	if (ClrStr == "CUSTOMCOLOR1") return CUSTOMCOLOR1;
+	else if (ClrStr == "CUSTOMCOLOR2") return CUSTOMCOLOR2;
+	else if (ClrStr == "CUSTOMCOLOR3") return CUSTOMCOLOR3;
+	else if (ClrStr == "CUSTOMCOLOR4") return CUSTOMCOLOR4;
+	else if (ClrStr == "CUSTOMCOLOR5") return CUSTOMCOLOR5;
+	else if (ClrStr == "CUSTOMCOLOR6") return CUSTOMCOLOR6;
+	else if (ClrStr == "CUSTOMCOLOR7") return CUSTOMCOLOR7;
+	else if (ClrStr == "CUSTOMCOLOR8") return CUSTOMCOLOR8;
+	else if (ClrStr == "CUSTOMCOLOR9") return CUSTOMCOLOR9;
+	else if (ClrStr == "CUSTOMCOLOR10") return CUSTOMCOLOR10;
+	else return WHITE;
 }
 
 void ApplicationManager::SaveAll(ofstream& Out)   //Call the Save function for each Figure
@@ -352,36 +333,54 @@ void ApplicationManager::ClearFigList()
 CFigure* ApplicationManager::getSelected()
 {
 	int index = getSelectedFigure();
-	if (index >= 0 && index < FigCount) {
+	if (index >= 0 && index < FigCount)
 		return FigList[index];
-	}
 	return NULL;
 }
-
 
 // Return index of selected figure 
 int ApplicationManager::getSelectedFigure()
 {
-	int selectedFiguresCount = 0;
-	int index = -1;
+
 	for (int i = 0; i < FigCount; i++)
-	{
 		if (FigList[i]->IsSelected())
-		{
-			index = i;
-			selectedFiguresCount++;
-		}
-	}
-	if (selectedFiguresCount == 1)
-		return index;
+			return i;
 	return -1;
 }
 
 
 //==================================================================================//
-//							Delete Figure											//
+//							Send To Back											//
 //==================================================================================//
 
+void ApplicationManager::SendToBack(int selectedIndex)
+{
+	if (selectedIndex != 0)
+	{
+		CFigure* spare = FigList[0];
+		FigList[0] = FigList[selectedIndex];
+		FigList[selectedIndex] = spare;
+	}
+}
+
+
+//==================================================================================//
+//							Bring To Front											//
+//==================================================================================//
+
+void ApplicationManager::BringToFront(int selectedIndex)
+{
+	if (selectedIndex != FigCount - 1)
+	{
+		CFigure* tmp = FigList[FigCount - 1];
+		FigList[FigCount - 1] = FigList[selectedIndex];
+		FigList[selectedIndex] = tmp;
+	}
+}
+
+//==================================================================================//
+//							Delete           										//
+//==================================================================================//
 
 // -- For  Figure Deleted 
 int ApplicationManager::DeleteFigure()
@@ -396,8 +395,8 @@ int ApplicationManager::DeleteFigure()
 			return i;
 		}
 	}
-
 }
+
 // After delete figure shift elements and delete null
 void ApplicationManager::shiftFigList(int _figCount)
 {
@@ -407,46 +406,11 @@ void ApplicationManager::shiftFigList(int _figCount)
 	}
 }
 
-
-//==================================================================================//
-//							Send To Back											//
-//==================================================================================//
-
-void ApplicationManager::SendToBack(int selectedIndex)
-{
-	if (selectedIndex != 0) {
-		for (int i = selectedIndex; i > 0; i--) {
-			CFigure* tmp = FigList[i - 1];
-			FigList[i - 1] = FigList[i];
-			FigList[i] = tmp;
-		}
-	}
-}
-
-
-//==================================================================================//
-//							Bring To Front											//
-//==================================================================================//
-
-void ApplicationManager::BringToFront(int selectedIndex)
-{
-	if (selectedIndex != FigCount - 1)
-	{
-		for (int i = selectedIndex; i < FigCount - 1; i++) {
-			CFigure* tmp = FigList[i + 1];
-			FigList[i + 1] = FigList[i];
-			FigList[i] = tmp;
-		}
-	}
-}
-
 ////////////////////////////////////////////////////////////////////////////////////
 //Return a pointer to the interface
 GUI *ApplicationManager::GetGUI() const
 {	return pGUI; }
 ////////////////////////////////////////////////////////////////////////////////////
-// 
-// 
 //Destructor
 ApplicationManager::~ApplicationManager()
 {
@@ -454,34 +418,4 @@ ApplicationManager::~ApplicationManager()
 		delete FigList[i];
 	delete pGUI;
 	
-}
-
-
-//==================================================================================//
-//							------EXIT WINDOW----------      						//
-//==================================================================================//
-
-int ApplicationManager::DisplayMessageBox()
-{
-	int msgboxID = MessageBox(
-		NULL,
-		"Are You Sure You Have Saved Your File?\n Click ok to Leave\nClick cancel to Save",
-		"Exit",
-		MB_OKCANCEL | MB_DEFBUTTON2 | MB_ICONWARNING
-	);
-
-	switch (msgboxID)
-	{
-	case IDCANCEL:
-		break;
-	case IDOK:
-		exit(0);
-		break;
-	}
-	//thia will execute the save and then exit immediatelly
-	Action* newAct = new ActionSave(this, FigCount, true);
-	ExecuteAction(newAct);
-
-
-	return msgboxID;
 }

@@ -9,11 +9,11 @@ private:
 	string FileName;
 	int FigCnt;
 public:
-	ActionLoad(ApplicationManager* pApp, int FigCount=0);
+	ActionLoad(ApplicationManager* pApp, int FigCount);
 
-	//virtual void ReadActionParameters();
+	virtual void ReadActionParameters();
 	bool ReadFileLocation(char[]);
-	//color getColorObject(string name)const;
+	color getColorObject(string name)const;
 
 	virtual void Execute();
 

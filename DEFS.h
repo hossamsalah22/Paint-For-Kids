@@ -24,13 +24,9 @@ enum ActionType //The actions supported (you can add more if needed)
 	EXIT,			//Exit the application
 
 	DRAWING_AREA,	//A click on the drawing area
-	PLAYING_AREA,	// A Click On The Playing Area
 	STATUS,			//A click on the status bar
 	EMPTY,			//A click on empty place in the toolbar
-	// Playing Area 
-	SHAPE,
-	COLOR,
-	SHAPE_COLOR,
+
 	TO_DRAW,		//Switch interface to Draw mode
 	TO_PLAY			//Switch interface to Play mode
 

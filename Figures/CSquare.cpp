@@ -1,6 +1,6 @@
 #include "CSquare.h"
+
 #include <iostream>
-#include <iomanip>
 #include <fstream>
 
 int CSquare::count = 0;
@@ -24,13 +24,13 @@ void CSquare::DrawMe(GUI* pGUI) const
 
 void CSquare::Save(ofstream& OutFile) {
 
-	OutFile << setw(12) << left << "CSquare"
-		<< setw(5) << this->ID
-		<< setw(5) << this->P1.x
-		<< setw(5) << this->P1.y
-		<< setw(5) << this->P2.x
-		<< setw(5) << this->P2.y
-		<< setw(8) << this->ColorString(this->FigGfxInfo.DrawClr);
+	OutFile << "CSquare\t"
+		<< this->ID << "\t"
+		<< this->P1.x << "\t"
+		<< this->P1.y << "\t"
+		<< this->P2.x << "\t"
+		<< this->P2.y << "\t"
+		<< this->ColorString(this->FigGfxInfo.DrawClr) << "\t";
 
 	if (this->FigGfxInfo.isFilled)
 		OutFile << this->ColorString(this->FigGfxInfo.FillClr) << "\n";

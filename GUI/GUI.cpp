@@ -17,11 +17,11 @@ GUI::GUI()
 	UI.MenuItemWidth = 50;
 	
 	UI.IsFilled = false; //Filling status
-	UI.DrawColor = BLACK;	//Drawing color
-	UI.FillColor = GREEN;	//Filling color
-	UI.MsgColor = WHITE;		//Messages color
-	UI.BkGrndColor = WHITE;	//Background color
-	UI.HighlightColor = BLACK;	//This color should NOT be used to draw figures. use if for highlight only
+	UI.DrawColor = CUSTOMCOLOR2;	//Drawing color
+	UI.FillColor = CUSTOMCOLOR9;	//Filling color
+	UI.MsgColor = CUSTOMCOLOR1;		//Messages color
+	UI.BkGrndColor = CUSTOMCOLOR1;	//Background color
+	UI.HighlightColor = CUSTOMCOLOR2;	//This color should NOT be used to draw figures. use if for highlight only
 	UI.StatusBarColor = DARKVIOLET;
 	UI.PenWidth = 5;	//width of the figures frames
 
@@ -100,11 +100,10 @@ ActionType GUI::MapInputToActionType() const
 			case ITM_FILL: return CHNG_FILL_CLR;
 			case ITM_BG: return CHNG_BG_CLR;
 			case ITM_SAVE: return SAVE;
+			case ITM_DEL: return DEL;
 			case ITM_LOAD: return LOAD;
 			case ITM_BACK: return SEND_BACK;
 			case ITM_FRNT: return BRNG_FRNT;
-			case ITM_TO_PLAY: return TO_PLAY;
-			case ITM_DEL: return DEL;
 			case ITM_EXIT: return EXIT;	
 			
 			default: return EMPTY;	//A click on empty place in desgin toolbar
@@ -123,25 +122,6 @@ ActionType GUI::MapInputToActionType() const
 	else	//GUI is in PLAY mode
 	{
 		///TODO:
-		if (y >= 0 && y < UI.ToolBarHeight) {
-			int ClickedItemOrder = (x / UI.MenuItemWidth);
-
-			switch (ClickedItemOrder)
-
-			{
-			case ITM_SHAPE:return SHAPE;
-			case ITM_COLOR:return COLOR;
-			case ITM_SHAPE_COLOR: return SHAPE_COLOR;
-			case ITM_TO_DRAW:return TO_DRAW;
-			default: return EMPTY;
-
-			}
-
-		}
-		if (y >= UI.ToolBarHeight && y < UI.height - UI.StatusBarHeight)
-		{
-			return PLAYING_AREA;
-		}
 		//perform checks similar to Draw mode checks above
 		//and return the correspoding action
 		return TO_PLAY;	//just for now. This should be updated
@@ -203,7 +183,7 @@ void GUI::CreateDrawToolBar() const
 	MenuItemImages[ITM_LOAD] = "images\\MenuItems\\MenuLoad.jpg";
 	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\MenuUndo.jpg";
 	MenuItemImages[ITM_REDO] = "images\\MenuItems\\MenuRedo.jpg";
-	MenuItemImages[ITM_TO_PLAY] = "images\\MenuItems\\MenuSwitchMode.jpg";
+	MenuItemImages[ITM_SWCH] = "images\\MenuItems\\MenuSwitchMode.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\MenuExit.jpg";
 
 	//TODO: Prepare images for each menu item and add it to the list
@@ -225,21 +205,6 @@ void GUI::CreatePlayToolBar() const
 {
 	UI.InterfaceMode = MODE_PLAY;
 	///TODO: write code to create Play mode menu
-
-	pWind->SetPen(UI.BkGrndColor, 1);
-	pWind->SetBrush(UI.BkGrndColor);
-	pWind->DrawRectangle(0, 0, UI.width, UI.height - UI.ToolBarHeight);
-
-	string MenuItemImages2[PLAY_ITM_COUNT];
-	MenuItemImages2[ITM_SHAPE] = "images\\PlayModeButtons\\MenuPlayMode2.jpg";
-	MenuItemImages2[ITM_COLOR] = "images\\PlayModeButtons\\MenuPlayMode3.jpg";
-	MenuItemImages2[ITM_SHAPE_COLOR] = "images\\PlayModeButtons\\MenuPlayMode1.jpg";
-	MenuItemImages2[ITM_TO_DRAW] = "images\\PlayModeButtons\\MenuSwitchMode.jpg";
-
-	//Draw menu item one image at a time
-	for (int i = 0; i < PLAY_ITM_COUNT; i++)
-		pWind->DrawImage(MenuItemImages2[i], i * UI.MenuItemWidth, 0, UI.MenuItemWidth, UI.ToolBarHeight);
-
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 

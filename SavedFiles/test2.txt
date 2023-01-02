@@ -1,6 +1,0 @@
-RED     BROWN   WHITE   
-4
-CHexagon    2    188  56   383  302  BLACK   YELLOW
-CHexagon    22   224  320  599  249  BLACK   NO_FILL
-CSquare     0    619  126  369  410  RED     BROWN
-CEllipse    1    842  262  1053 141  BLACK   NO_FILL

@@ -13,7 +13,7 @@ ActionLoad::ActionLoad(ApplicationManager* pApp, int FigCount) : Action(pApp)
 	FileName = "temp";
 	FigCnt = FigCount;    //We need the figure number to write it on the file
 }
-/*
+
 void ActionLoad::ReadActionParameters()
 {
 
@@ -22,7 +22,7 @@ void ActionLoad::ReadActionParameters()
 	//pGUI->PrintMessage("Enter File name to load");
 	//FileName = pGUI->GetSrting();  //read the file name
 }
-*/
+
 bool ActionLoad::ReadFileLocation(char szFileName[])
 {
 	OPENFILENAME ofn;
@@ -56,6 +56,7 @@ bool ActionLoad::ReadFileLocation(char szFileName[])
 void ActionLoad::Execute()
 {
 	char openedFileName[MAX_PATH];
+	//ReadActionParameters();     //get the parameters
 	GUI* pGUI = pManager->GetGUI();
 	ifstream InputFile;   //object of ofstream to write on the disk
 	if (ReadFileLocation(openedFileName))
