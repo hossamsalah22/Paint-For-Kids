@@ -1,5 +1,0 @@
-BLACK   GREEN   WHITE   
-3
-CSquare     0    120  64   414  307  BLACK   NO_FILL
-CEllipse    1    164  72   534  378  BLACK   NO_FILL
-CHexagon    2    317  167  636  416  BLACK   NO_FILL
