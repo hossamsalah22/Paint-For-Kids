@@ -1,0 +1,23 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  GUI.cpp
+  ApplicationManager.cpp
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(214,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(217,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(218,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(239,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(241,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(242,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(247,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(249,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(250,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(171,8): warning C4101: 'p': unreferenced local variable
+  ActionToPlay.cpp
+  Generating Code...
+D:\ITI\01- Still\C++(OOP)\Project Framework\ApplicationManager.cpp(451): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+  Skipping... (no relevant changes detected)
+  ActionChangeFill.cpp
+  ActionChangeColor.cpp
+  ActionChangeBackground.cpp
+  ActionAddEllipse.cpp
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Project Framework\Debug\PT Project.exe
