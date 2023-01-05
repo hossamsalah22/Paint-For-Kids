@@ -12,7 +12,6 @@
 #include "Actions\ActionChangeColor.h"
 #include "Actions\ActionChangeFill.h"
 #include "Actions\ActionChangeBackground.h"
-#include <math.h>
 #include "Actions\ActionSave.h"
 #include "Actions\ActionLoad.h"
 #include "Actions\ActionSendBack.h"
@@ -20,6 +19,7 @@
 #include "Actions\ActionDelete.h"
 #include "Actions\ActionToPlay.h"
 #include "Actions\ActionToDraw.h"
+#include <math.h>
 #include<fstream>
 #include <string>
 

@@ -33,18 +33,16 @@ void ActionChangeColor::Execute()
 		int colorOrder = P.x / UI.MenuItemWidth;
 		switch (colorOrder)
 		{
-			  
-		case 0: pGUI->setCrntDrawColor(false); pManager->UpdateFigureColor(false); break;
-		case 1: pGUI->setCrntDrawColor(WHITE); pManager->UpdateFigureColor(WHITE); break;
-		case 2: pGUI->setCrntDrawColor(BLACK); pManager->UpdateFigureColor(BLACK); break;
-		case 3: pGUI->setCrntDrawColor(BROWN); pManager->UpdateFigureColor(BROWN); break;
-		case 4: pGUI->setCrntDrawColor(PURPLE); pManager->UpdateFigureColor(PURPLE); break;
-		case 5: pGUI->setCrntDrawColor(PINK); pManager->UpdateFigureColor(PINK); break;
-		case 6: pGUI->setCrntDrawColor(RED); pManager->UpdateFigureColor(RED); break;
-		case 7: pGUI->setCrntDrawColor(ORANGE); pManager->UpdateFigureColor(ORANGE); break;
-		case 8: pGUI->setCrntDrawColor(YELLOW); pManager->UpdateFigureColor(YELLOW); break;
-		case 9: pGUI->setCrntDrawColor(GREEN); pManager->UpdateFigureColor(GREEN); break;
-		case 10: pGUI->setCrntDrawColor(BLUE); pManager->UpdateFigureColor(BLUE); break;
+		case 0: pGUI->setCrntDrawColor(WHITE); pManager->UpdateFigureColor(WHITE); break;
+		case 1: pGUI->setCrntDrawColor(BLACK); pManager->UpdateFigureColor(BLACK); break;
+		case 2: pGUI->setCrntDrawColor(BROWN); pManager->UpdateFigureColor(BROWN); break;
+		case 3: pGUI->setCrntDrawColor(PURPLE); pManager->UpdateFigureColor(PURPLE); break;
+		case 4: pGUI->setCrntDrawColor(PINK); pManager->UpdateFigureColor(PINK); break;
+		case 5: pGUI->setCrntDrawColor(RED); pManager->UpdateFigureColor(RED); break;
+		case 6: pGUI->setCrntDrawColor(ORANGE); pManager->UpdateFigureColor(ORANGE); break;
+		case 7: pGUI->setCrntDrawColor(YELLOW); pManager->UpdateFigureColor(YELLOW); break;
+		case 8: pGUI->setCrntDrawColor(GREEN); pManager->UpdateFigureColor(GREEN); break;
+		case 9: pGUI->setCrntDrawColor(BLUE); pManager->UpdateFigureColor(BLUE); break;
 		}
 	}
 	else

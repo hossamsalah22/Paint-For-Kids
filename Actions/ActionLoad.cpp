@@ -7,6 +7,7 @@
 #include <fstream>
 #include "String.h"
 #include<iostream>
+#include <direct.h>
 
 ActionLoad::ActionLoad(ApplicationManager* pApp, int FigCount) : Action(pApp)
 {
@@ -56,6 +57,9 @@ bool ActionLoad::ReadFileLocation(char szFileName[])
 void ActionLoad::Execute()
 {
 	pManager->ResetPoint();
+
+	char* homePath = _getcwd(NULL, 1024);
+	
 	char openedFileName[MAX_PATH];
 	//ReadActionParameters();     //get the parameters
 	GUI* pGUI = pManager->GetGUI();
@@ -122,11 +126,11 @@ void ActionLoad::Execute()
 			pGUI->ClearStatusBar();
 			InputFile.close();
 			//close the file after looping 
-
 		}
 	}
 	else
 	{
 		pGUI->PrintMessage("User cancelled the operation");
 	}
+	_chdir(homePath);
 }
