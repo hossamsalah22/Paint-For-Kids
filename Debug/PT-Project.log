@@ -1,5 +1,30 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
   CSquare.cpp
+D:\ITI\01- Still\C++(OOP)\Working test\Figures\CSquare.cpp(75,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Figures\CSquare.cpp(76,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Figures\CSquare.cpp(78,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Figures\CSquare.cpp(79,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   CHexagon.cpp
+  CEllipse.cpp
+D:\ITI\01- Still\C++(OOP)\Working test\Figures\CEllipse.cpp(71,21): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Figures\CEllipse.cpp(72,19): warning C4244: '*=': conversion from 'float' to 'int', possible loss of data
   Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  ApplicationManager.cpp
+  ActionToPlay.cpp
+  ActionToDraw.cpp
+  ActionSendBack.cpp
+  ActionSelect.cpp
+  ActionSave.cpp
+  ActionResize.cpp
+  ActionLoad.cpp
+  ActionDelete.cpp
+  ActionChangeFill.cpp
+  ActionChangeColor.cpp
+  ActionChangeBackground.cpp
+  ActionBringFront.cpp
+  ActionAddSquare.cpp
+  ActionAddHexagon.cpp
+  ActionAddEllipse.cpp
   PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Working test\Debug\PT Project.exe
