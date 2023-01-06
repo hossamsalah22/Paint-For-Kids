@@ -60,4 +60,32 @@ void CEllipse::Load(ifstream& Infile) {
 		
 	this->FigGfxInfo.BorderWdth = 3; //pass 3 as a default value for borderWidth
 	this->SetSelected(false);
-};
+}
+
+
+bool CEllipse::Resize(GUI* pGUI, float factor) {
+	int centerOfX = (P1.x + P2.x) / 2;
+	int centerOfY = (P1.y + P2.y) / 2;
+	int HorizontalSpace = P1.x - P2.x;
+	int VerticalSpace = P1.y - P2.y;
+	HorizontalSpace *= factor;
+	VerticalSpace *= factor;
+	int resizedBottomRightX = centerOfX + (HorizontalSpace / 2);
+	int resizedBottomRightY = centerOfY + (VerticalSpace / 2);
+	int resizedTopLeftX = centerOfX - (HorizontalSpace / 2);
+	int resizedTopLeftY = centerOfY - (VerticalSpace / 2);
+
+
+
+	if (resizedTopLeftX > 0 && resizedTopLeftX < UI.width && resizedTopLeftY > UI.ToolBarHeight && resizedTopLeftY < UI.height - UI.StatusBarHeight
+		&& resizedBottomRightX > 0 && resizedBottomRightX < UI.width && resizedBottomRightY > UI.ToolBarHeight && resizedBottomRightY < UI.height - UI.StatusBarHeight) {
+
+		P1.x = resizedTopLeftX;
+		P1.y = resizedTopLeftY;
+		P2.x = resizedBottomRightX;
+		P2.y = resizedBottomRightY;
+		return true;
+	}
+	return false;
+
+}

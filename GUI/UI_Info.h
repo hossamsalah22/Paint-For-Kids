@@ -26,7 +26,10 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_BG,			//Change background color
 	ITM_DEL,		//Delete shape
 	ITM_MOV,		//Move shape
-	ITM_RSZ,		//Resize shape
+	ITM_RSZ_QRT,		//Resize shape
+	ITM_RSZ_HALF,		//Resize shape
+	ITM_RSZ_DOUBLE,		//Resize shape
+	ITM_RSZ_QUADRUPLE,		//Resize shape
 	ITM_BACK,		//Send shape to back
 	ITM_FRNT,		//Bring shape to front
 	ITM_SAVE,		//Save graph

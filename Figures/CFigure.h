@@ -49,6 +49,8 @@ public:
 	virtual void Load(ifstream &Infile) = 0;	//Load the figure parameters to the file
 
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
+
+	virtual bool Resize(GUI* pGUI, float factor) = 0;	//Resize the figure
 };
 
 #endif

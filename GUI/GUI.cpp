@@ -49,7 +49,7 @@ bool GUI::GetPointClicked(int& x, int& y) const
 	int MenuItemsCount;
 	switch (UI.InterfaceMode) {
 	case MODE_DRAW:
-		MenuItemsCount = 18;
+		MenuItemsCount = 21;
 		break;
 	case MODE_PLAY:
 		MenuItemsCount = 4;
@@ -122,6 +122,10 @@ ActionType GUI::MapInputToActionType(int _x, int _y) const
 			case ITM_BACK: return SEND_BACK;
 			case ITM_FRNT: return BRNG_FRNT;
 			case ITM_PLAY: return TO_PLAY;
+			case ITM_RSZ_QRT: return QUARTERED_RESIZE;
+			case ITM_RSZ_HALF: return HALFED_RESIZE;
+			case ITM_RSZ_DOUBLE: return DOUBLED_RESIZE;
+			case ITM_RSZ_QUADRUPLE: return QUADRUPLE_RESIZED;
 			case ITM_EXIT: return EXIT;	
 			
 			default: return EMPTY;	//A click on empty place in desgin toolbar
@@ -213,7 +217,10 @@ void GUI::CreateDrawToolBar() const
 	MenuItemImages[ITM_BG] = "images\\MenuItems\\MenuBackground.jpg";
 	MenuItemImages[ITM_DEL] = "images\\MenuItems\\MenuDelete.jpg";
 	MenuItemImages[ITM_MOV] = "images\\MenuItems\\MenuMove.jpg";
-	MenuItemImages[ITM_RSZ] = "images\\MenuItems\\MenuResize.jpg";
+	MenuItemImages[ITM_RSZ_QRT] = "images\\MenuItems\\MenuResize0.25.jpg";
+	MenuItemImages[ITM_RSZ_HALF] = "images\\MenuItems\\MenuResize0.5.jpg";
+	MenuItemImages[ITM_RSZ_DOUBLE] = "images\\MenuItems\\MenuResize2.jpg";
+	MenuItemImages[ITM_RSZ_QUADRUPLE] = "images\\MenuItems\\MenuResize4.jpg";
 	MenuItemImages[ITM_BACK] = "images\\MenuItems\\MenuSendBack.jpg";
 	MenuItemImages[ITM_FRNT] = "images\\MenuItems\\MenuBringFront.jpg";
 	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\MenuSave.jpg";

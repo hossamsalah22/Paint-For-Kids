@@ -21,7 +21,6 @@ void CSquare::DrawMe(GUI* pGUI) const
 
 }
 
-
 void CSquare::Save(ofstream& OutFile) {
 
 	OutFile << "CSquare\t"
@@ -37,7 +36,6 @@ void CSquare::Save(ofstream& OutFile) {
 	else
 		OutFile << "NO_FILL\n";
 }
-
 
 void CSquare::Load(ifstream& Infile) {
 
@@ -63,4 +61,10 @@ void CSquare::Load(ifstream& Infile) {
 	
 	this->FigGfxInfo.BorderWdth = 3; //pass 3 as default value for borderWidth
 	this->SetSelected(false);
+}
+
+
+bool CSquare::Resize(float factor, GUI* pGUI) {
+	//Resize Code
+	return false;
 }

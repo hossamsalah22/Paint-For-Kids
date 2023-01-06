@@ -19,6 +19,7 @@
 #include "Actions\ActionDelete.h"
 #include "Actions\ActionToPlay.h"
 #include "Actions\ActionToDraw.h"
+#include "Actions\ActionResize.h"
 #include <math.h>
 #include<fstream>
 #include <string>

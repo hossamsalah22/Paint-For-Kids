@@ -91,6 +91,18 @@ Action* ApplicationManager::CreateAction(ActionType ActType)
 		case BRNG_FRNT: //Send a figure to the Front of all figures
 			newAct = new ActionBringFront(this);
 			break;
+		case QUARTERED_RESIZE:
+			newAct = new ActionResize(this, 0.25);
+			break;
+		case HALFED_RESIZE:
+			newAct = new ActionResize(this, 0.5);
+			break;
+		case DOUBLED_RESIZE:
+			newAct = new ActionResize(this, 2);
+			break;
+		case QUADRUPLE_RESIZED:
+			newAct = new ActionResize(this, 4);
+			break;
 		case TO_PLAY:
 			newAct = new ActionToPlay(this);
 			break;
