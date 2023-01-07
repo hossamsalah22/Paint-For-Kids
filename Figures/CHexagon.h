@@ -14,7 +14,6 @@ public:
 	virtual void DrawMe(GUI* pOut) const;
 	void Save(ofstream&);
 	void Load(ifstream&);
-	bool Resize(GUI* pGUI, float factor);
 };
 
 #endif

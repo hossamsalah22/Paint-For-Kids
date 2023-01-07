@@ -3,6 +3,7 @@
 
 #include "..\defs.h"
 #include "..\GUI\GUI.h"
+#include <iostream>
 
 //Base class for all figures
 class CFigure
@@ -49,7 +50,7 @@ public:
 
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
 
-	virtual bool Resize(GUI* pGUI, float factor) = 0;	//Resize the figure
+	bool Resize(GUI* pGUI, float factor);	//Resize the figure
 	
 };
 
