@@ -18,7 +18,7 @@ void ActionBringFront::Execute()
 		pGUI->ClearDrawArea();
 	}
 	else {
-		pGUI->PrintMessage("Select a shape before you can perform this action");
+		pGUI->PrintMessage("Select One Shape before you can perform this action");
 	}
 	pManager->ResetPoint();
 }

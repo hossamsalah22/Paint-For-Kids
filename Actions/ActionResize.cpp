@@ -8,17 +8,9 @@ ActionResize::ActionResize(ApplicationManager* pApp, float factor) : Action(pApp
 
 void ActionResize::Execute() {
 	GUI* pGUI = pManager->GetGUI();
-	CFigure* figure = pManager->getSelected();
-
-	if (figure == NULL) {
-		pGUI->PrintMessage("Select a shape before you can perform this action");
-		Point point;
-		pGUI->GetPointClicked(point.x, point.y);
-		figure = pManager->GetFigure(point.x, point.y);
-	}
-
-
-	if (figure != NULL) {
+	int selectedIndex = pManager->getSelectedFigure();
+	if (selectedIndex != -1) {
+		CFigure* figure = pManager->getSelected();
 		bool ableToResize = figure->Resize(pGUI, resizeFactor);
 		if (ableToResize) {
 			pManager->UpdateInterface();
@@ -27,5 +19,8 @@ void ActionResize::Execute() {
 		else {
 			pGUI->PrintMessage("Can't Resize Due To Boundries");
 		}
+	}
+	else {
+		pGUI->PrintMessage("Select One Shape before you can perform this action");
 	}
 }
