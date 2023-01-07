@@ -23,4 +23,5 @@ void ActionResize::Execute() {
 	else {
 		pGUI->PrintMessage("Select One Shape before you can perform this action");
 	}
+	pManager->ResetPoint();
 }

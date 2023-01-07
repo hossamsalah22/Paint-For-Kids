@@ -37,7 +37,7 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_UNDO,		//Undo action
 	ITM_REDO,		//Redo action
 	ITM_PLAY,		//Switch mode
-	ITM_EXIT,		//Exit item
+	ITM_EXIT_DRAW,		//Exit item
 	
 	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 	
@@ -53,6 +53,7 @@ enum PlayMenuItem //The items of the Play menu (you should add more items)
 	ITM_P_H_FILL,
 	ITM_P_H_BOTH,
 	ITM_TO_DRAW,
+	ITM_EXIT_PLAY,		//Exit item
 
 	PLAY_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 

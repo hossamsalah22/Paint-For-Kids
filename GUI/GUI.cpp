@@ -52,7 +52,7 @@ bool GUI::GetPointClicked(int& x, int& y) const
 		MenuItemsCount = 21;
 		break;
 	case MODE_PLAY:
-		MenuItemsCount = 4;
+		MenuItemsCount = 5;
 		break;
 	}
 	
@@ -126,7 +126,7 @@ ActionType GUI::MapInputToActionType(int _x, int _y) const
 			case ITM_RSZ_HALF: return HALFED_RESIZE;
 			case ITM_RSZ_DOUBLE: return DOUBLED_RESIZE;
 			case ITM_RSZ_QUADRUPLE: return QUADRUPLE_RESIZED;
-			case ITM_EXIT: return EXIT;	
+			case ITM_EXIT_DRAW: return EXIT;	
 			
 			default: return EMPTY;	//A click on empty place in desgin toolbar
 			}
@@ -154,6 +154,7 @@ ActionType GUI::MapInputToActionType(int _x, int _y) const
 			case ITM_P_H_FILL:return P_H_FILL;
 			case ITM_TO_DRAW:return TO_DRAW;
 			case ITM_P_H_BOTH: return P_H_BOTH;
+			case ITM_EXIT_PLAY: return EXIT;
 			default: return EMPTY;
 
 			}
@@ -228,7 +229,7 @@ void GUI::CreateDrawToolBar() const
 	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\MenuUndo.jpg";
 	MenuItemImages[ITM_REDO] = "images\\MenuItems\\MenuRedo.jpg";
 	MenuItemImages[ITM_PLAY] = "images\\MenuItems\\MenuSwitchMode.jpg";
-	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\MenuExit.jpg";
+	MenuItemImages[ITM_EXIT_DRAW] = "images\\MenuItems\\MenuExit.jpg";
 
 	//TODO: Prepare images for each menu item and add it to the list
 
@@ -259,6 +260,7 @@ void GUI::CreatePlayToolBar() const
 	MenuItemImages2[ITM_P_H_FILL] = "images\\PlayModeButtons\\MenuPlayMode3.jpg";
 	MenuItemImages2[ITM_P_H_BOTH] = "images\\PlayModeButtons\\MenuPlayMode1.jpg";
 	MenuItemImages2[ITM_TO_DRAW] = "images\\PlayModeButtons\\MenuSwitchMode.jpg";
+	MenuItemImages2[ITM_EXIT_PLAY] = "images\\MenuItems\\MenuExit.jpg";
 
 	//Draw menu item one image at a time
 	for (int i = 0; i < PLAY_ITM_COUNT; i++)

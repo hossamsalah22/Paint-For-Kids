@@ -14,4 +14,5 @@ void ActionToPlay::Execute()
 	GUI* pGUI = pManager->GetGUI();
 	pGUI->CreatePlayToolBar();
 	pGUI->PrintMessage("Switched to Play Mode! Let's Play!");
+	pManager->ResetPoint();
 }

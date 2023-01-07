@@ -40,7 +40,6 @@ public:
 
 
 	//virtual void Rotate() = 0;	//Rotate the figure
-	//virtual void Resize() = 0;	//Resize the figure
 	//virtual void Move() = 0;		//Move the figure
 
 	string ColorString(color) const;
@@ -51,6 +50,7 @@ public:
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
 
 	virtual bool Resize(GUI* pGUI, float factor) = 0;	//Resize the figure
+	
 };
 
 #endif
