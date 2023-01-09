@@ -58,7 +58,7 @@ void CSquare::Load(ifstream& Infile) {
 		FigGfxInfo.FillClr = this->ColorObject(s);
 		FigGfxInfo.isFilled = true;
 	}
-	
-	this->FigGfxInfo.BorderWdth = 3; //pass 3 as default value for borderWidth
+	this->show();
+	this->FigGfxInfo.BorderWdth = 5; //pass 3 as default value for borderWidth
 	this->SetSelected(false);
 }

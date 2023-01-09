@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-﻿  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
-=======
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  CFigure.cpp
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(84,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(85,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(87,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(88,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  PT-Project.vcxproj -> D:\ITI\C++\hossamsalah22\Paint-For-Kids\Debug\PT Project.exe
->>>>>>> a33ee250612710e131201b62d2052b7b878da70b
+  CSquare.cpp
+  CHexagon.cpp
+  CEllipse.cpp
+  Generating Code...
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe

@@ -17,11 +17,6 @@ ActionLoad::ActionLoad(ApplicationManager* pApp, int FigCount) : Action(pApp)
 
 void ActionLoad::ReadActionParameters()
 {
-
-	//GUI* pGUI = pManager->GetGUI();
-	//pGUI->ClearStatusBar();
-	//pGUI->PrintMessage("Enter File name to load");
-	//FileName = pGUI->GetSrting();  //read the file name
 }
 
 bool ActionLoad::ReadFileLocation(char szFileName[])
@@ -59,7 +54,7 @@ void ActionLoad::Execute()
 	pManager->ResetPoint();
 
 	char* homePath = _getcwd(NULL, 1024);
-	
+
 	char openedFileName[MAX_PATH];
 	//ReadActionParameters();     //get the parameters
 	GUI* pGUI = pManager->GetGUI();

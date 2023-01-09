@@ -371,7 +371,7 @@ void ApplicationManager::UpdateInterface() const
 	pGUI->ClearDrawArea();
 	for (int i = 0; i < FigCount; i++) {
 		if(!FigList[i]->IsHidden())
-		FigList[i]->DrawMe(pGUI);		//Call Draw function (virtual member fn)
+			FigList[i]->DrawMe(pGUI);		//Call Draw function (virtual member fn)
 	}
 }
 
