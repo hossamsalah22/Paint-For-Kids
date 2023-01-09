@@ -5,7 +5,7 @@ ActionSave::ActionSave(ApplicationManager* pApp, int FigCount, bool exit = false
 {
 	FileName = "temp_name";
 	FigCnt = FigCount;
-	fireExit = exit;
+	fireExit = exit;	
 }
 
 void ActionSave::ReadActionParameters()

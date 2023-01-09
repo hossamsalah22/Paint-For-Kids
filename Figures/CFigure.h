@@ -14,7 +14,7 @@ protected:
 	GfxInfo FigGfxInfo;	//Figure graphis info
 	Point P1;
 	Point P2;
-	
+
 	/// Add more parameters if needed.
 
 public:
@@ -51,7 +51,9 @@ public:
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
 
 	bool Resize(GUI* pGUI, float factor);	//Resize the figure
-	
+	bool IsHidden();
+	void Hide();
+	void show();
 };
 
 #endif
