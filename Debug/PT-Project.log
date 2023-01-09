@@ -1,4 +1,5 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+<<<<<<< HEAD
   CEllipse.cpp
 ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
 jutils.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
@@ -38,3 +39,33 @@ colors.obj : warning LNK4204: '' is missing debugging information for referencin
 CMUgraphics.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
 auxil.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
   PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
+=======
+  ActionAddEllipse.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  GUI.cpp
+  CSquare.cpp
+  CHexagon.cpp
+  CFigure.cpp
+  CEllipse.cpp
+  ApplicationManager.cpp
+  PickByType.cpp
+  PickByFill.cpp
+  PickByBoth.cpp
+  ActionToPlay.cpp
+  ActionToDraw.cpp
+  ActionSendBack.cpp
+  ActionSelect.cpp
+  ActionSave.cpp
+  ActionResize.cpp
+  ActionLoad.cpp
+  ActionDelete.cpp
+  ActionChangeFill.cpp
+  ActionChangeColor.cpp
+  ActionChangeBackground.cpp
+  ActionBringFront.cpp
+  ActionAddSquare.cpp
+  ActionAddHexagon.cpp
+  PT-Project.vcxproj -> D:\ITI\C++\hossamsalah22\Paint-For-Kids\Debug\PT Project.exe
+>>>>>>> af1716d373e16385375fb318fdc59e285bd7c60e

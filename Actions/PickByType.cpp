@@ -5,7 +5,7 @@
 #include "..\GUI\GUI.h"
 
 GUI* pGUI;
-int FigAvailList[3] = { 0,0,0 };
+int FigAvailList[3];
 int FigID;
 int CorrectCounter;
 CFigure* FigList[200];
@@ -13,6 +13,9 @@ int FigCount;
 
 PickByType::PickByType(ApplicationManager* pApp) :Action(pApp)
 {
+	FigAvailList[0] = {0};
+	FigAvailList[1] = {0};
+	FigAvailList[2] = {0};
 	pManager->copy(FigList);
 	CorrectCounter=0;
 	pGUI = pManager->GetGUI();
@@ -44,7 +47,6 @@ PickByType::PickByType(ApplicationManager* pApp) :Action(pApp)
 }
 void PickByType::Execute()
 {
-	
 	Point P;
 
 	while (1)
@@ -58,6 +60,10 @@ void PickByType::Execute()
 		}
 		if (P.y > UI.ToolBarHeight && P.y < UI.height - UI.StatusBarHeight)
 			PickByType::Select(P);
+		if (CorrectCounter >= FigAvailList[FigID]) {
+			pGUI->PrintMessage("you won");
+			pManager->show();
+		}
 	}
 
 
@@ -110,7 +116,8 @@ void PickByType::Select(Point P) //Return All figures
 							pGUI->PrintMessage(score);
 						}
 						else {
-							pGUI->PrintMessage("you lost");
+							pGUI->PrintMessage("wrong selection");
+							FigList[i]->SetSelected(false);
 						}
 					}
 					break;
@@ -141,7 +148,8 @@ void PickByType::Select(Point P) //Return All figures
 							pGUI->PrintMessage(score);
 						}
 						else {
-							pGUI->PrintMessage("you lost");
+							pGUI->PrintMessage("wrong selection");
+							FigList[i]->SetSelected(false);
 						}
 					}
 					break;
@@ -184,7 +192,8 @@ void PickByType::Select(Point P) //Return All figures
 							pGUI->PrintMessage(score);
 						}
 						else {
-							pGUI->PrintMessage("you lost");
+							pGUI->PrintMessage("wrong selection");
+							FigList[i]->SetSelected(false);
 						}
 					}
 					break;
