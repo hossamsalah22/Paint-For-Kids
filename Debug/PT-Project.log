@@ -1,80 +1,40 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-<<<<<<< HEAD
-  main.cpp
-  GUI.cpp
-  CSquare.cpp
-  CHexagon.cpp
-  CFigure.cpp
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(84,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(85,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(87,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(88,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   CEllipse.cpp
-  ApplicationManager.cpp
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(228,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(231,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(232,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(256,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(258,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(259,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(264,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(266,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(267,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(182,8): warning C4101: 'p': unreferenced local variable
-  PickByType.cpp
-  PickByFill.cpp
-  PickByBoth.cpp
-  ActionToPlay.cpp
-  ActionToDraw.cpp
-  ActionSendBack.cpp
-  ActionSelect.cpp
-  ActionSave.cpp
-  ActionResize.cpp
-  ActionLoad.cpp
-  ActionDelete.cpp
-  ActionChangeFill.cpp
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeFill.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  ActionChangeColor.cpp
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeColor.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Generating Code...
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(177): warning C4715: 'ApplicationManager::GetFigure': not all control paths return a value
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(473): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
-  Compiling...
-  ActionChangeBackground.cpp
-D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeBackground.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  ActionBringFront.cpp
-  ActionAddSquare.cpp
-  ActionAddHexagon.cpp
-  ActionAddEllipse.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  ActionMove.cpp
-  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
-=======
-  ApplicationManager.cpp
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(228,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(231,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(232,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(257,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(259,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(260,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(265,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(267,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(268,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(182,8): warning C4101: 'p': unreferenced local variable
-  PickByType.cpp
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(126,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(129,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(130,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(162,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(164,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(165,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(170,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(172,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(173,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(72,8): warning C4101: 'p': unreferenced local variable
-  Generating Code...
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(474): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
 ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-  PT-Project.vcxproj -> D:\ITI\C++\hossamsalah22\Paint-For-Kids\Debug\PT Project.exe
->>>>>>> 3521dbd5581d0139b218c05aa76fb30a53bd79b9
+jutils.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jquant2.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jquant1.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jmemnobs.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jmemmgr.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctred.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctint.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctfst.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctflt.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jerror.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdtrans.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdsample.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdpostct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdphuff.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmerge.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmaster.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmarker.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmainct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdinput.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdhuff.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jddctmgr.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdcolor.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdcoefct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdatasrc.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdapistd.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdapimin.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jcparam.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jcomapi.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+windowinput.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+mousequeue.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+keyqueue.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jpegload.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+image.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+colors.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+CMUgraphics.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+auxil.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe

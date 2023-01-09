@@ -87,7 +87,7 @@ bool CFigure::Resize(GUI* pGUI, float factor) {
 	int resizedTopLeftY = Center.y + vertical * factor;
 	int resizedBottomRightY = Center.y - vertical * factor;
 	int lenDeff = abs(abs(resizedBottomRightX - resizedTopLeftX) - abs(resizedTopLeftY - resizedBottomRightY));
-	while (lenDeff < 20) {
+	while (lenDeff < 10) {
 		return false;
 	}
 		if (resizedTopLeftX > 0 && resizedTopLeftX < UI.width

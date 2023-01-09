@@ -10,9 +10,7 @@ private:
 	int FigCnt;
 public:
 	ActionLoad(ApplicationManager* pApp, int FigCount);
-	virtual void ReadActionParameters();
 	bool ReadFileLocation(char[]);
-
 	virtual void Execute();
 };
 
