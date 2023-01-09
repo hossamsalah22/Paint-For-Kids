@@ -14,8 +14,8 @@ protected:
 	GfxInfo FigGfxInfo;	//Figure graphis info
 	Point P1;
 	Point P2;
-
 	/// Add more parameters if needed.
+	
 
 public:
 	CFigure(GfxInfo FigureGfxInfo);

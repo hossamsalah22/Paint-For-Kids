@@ -94,6 +94,8 @@ public:
 	void show();
 	void ToPlay();
 	void ToDraw();
+	void copy(CFigure* arr[]);
+	int getCounter();
 };
 
 #endif

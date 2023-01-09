@@ -5,8 +5,7 @@ ApplicationManager::ApplicationManager()
 {
 	//Create Input and output
 	pGUI = new GUI;	
-	
-	FigCount = TempFigCount = 0;
+	FigCount = 0;
 	IntoPlayMode = false;
 	x = y = -1;
 		
@@ -238,6 +237,7 @@ void ApplicationManager::SelectFigure(Point P) const //Return All figures
 					else {
 						FigList[i]->SetSelected(true);
 						if (IntoPlayMode) {
+							
 							FigList[i]->Hide();
 						}
 					}
@@ -527,12 +527,12 @@ int ApplicationManager::ExitMessage()
 
 void ApplicationManager::getFigureList(int figures[3]) {
 	for (int i = 0; i < FigCount; i++) {
-		if (FigList[i]->GetID() == 0)
-			figures[0] = 1;
-		if (FigList[i]->GetID() == 1)
-			figures[1] = 1;
-		if (FigList[i]->GetID() == 2)
-			figures[2] = 1;
+		if ((FigList[i]->GetID()) % 10 == 0)
+			figures[0]++;
+		else if ((FigList[i]->GetID()) % 10 == 1)
+			figures[1]++;
+		else if ((FigList[i]->GetID()) % 10 == 2)
+			figures[2]++;
 	}
 }
 
@@ -560,4 +560,12 @@ void ApplicationManager::ToPlay() {
 }
 void ApplicationManager::ToDraw() {
 	IntoPlayMode = false;
+}
+void ApplicationManager::copy(CFigure* arr[]) {
+	for (int i = 0; i < FigCount; i++) {
+		arr[i] = FigList[i];
+	}
+}
+int ApplicationManager::getCounter() {
+	return FigCount;
 }

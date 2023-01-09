@@ -1,4 +1,5 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+<<<<<<< HEAD
   main.cpp
   GUI.cpp
   CSquare.cpp
@@ -49,3 +50,31 @@ D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeBack
   Skipping... (no relevant changes detected)
   ActionMove.cpp
   PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
+=======
+  ApplicationManager.cpp
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(228,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(231,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(232,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(257,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(259,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(260,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(265,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(267,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(268,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(182,8): warning C4101: 'p': unreferenced local variable
+  PickByType.cpp
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(126,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(129,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(130,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(162,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(164,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(165,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(170,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(172,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(173,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(72,8): warning C4101: 'p': unreferenced local variable
+  Generating Code...
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(474): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  PT-Project.vcxproj -> D:\ITI\C++\hossamsalah22\Paint-For-Kids\Debug\PT Project.exe
+>>>>>>> 3521dbd5581d0139b218c05aa76fb30a53bd79b9
