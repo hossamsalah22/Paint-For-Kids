@@ -121,6 +121,7 @@ ActionType GUI::MapInputToActionType(int _x, int _y) const
 			case ITM_LOAD: return LOAD;
 			case ITM_BACK: return SEND_BACK;
 			case ITM_FRNT: return BRNG_FRNT;
+			case ITM_MOV: return MOVE;
 			case ITM_PLAY: return TO_PLAY;
 			case ITM_RSZ_QRT: return QUARTERED_RESIZE;
 			case ITM_RSZ_HALF: return HALFED_RESIZE;
