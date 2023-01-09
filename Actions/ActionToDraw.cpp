@@ -14,5 +14,8 @@ void ActionToDraw::Execute()
 	GUI* pGUI = pManager->GetGUI();
 	pGUI->CreateDrawToolBar();
 	pGUI->PrintMessage("Switched to Draw Mode! Start Drawing");
+	pManager->show();
+	pManager->ToDraw();
 	pManager->ResetPoint();
+	
 }

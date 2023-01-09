@@ -9,6 +9,8 @@ CFigure::CFigure(GfxInfo FigureGfxInfo)
 { 
 	FigGfxInfo = FigureGfxInfo;	//Default status is non-filled.
 	Selected = false;
+	FigGfxInfo.IsClickable = true;
+	FigGfxInfo.IsHidden = false;
 }
 
 void CFigure::SetSelected(bool s)
@@ -102,3 +104,16 @@ bool CFigure::Resize(GUI* pGUI, float factor) {
 		}
 		return false;
 }
+
+bool CFigure::IsHidden() {
+	return FigGfxInfo.IsHidden;
+};
+
+void CFigure::Hide() {
+	FigGfxInfo.IsHidden=true;
+	Selected = false;
+};
+
+void CFigure::show() {
+	FigGfxInfo.IsHidden = false;
+};
