@@ -1,7 +1,1 @@
-﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  CFigure.cpp
-D:\ITI\01- Still\C++(OOP)\Working test\Figures\CFigure.cpp(82,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Figures\CFigure.cpp(83,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Figures\CFigure.cpp(85,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Figures\CFigure.cpp(86,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Working test\Debug\PT Project.exe
+﻿  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
