@@ -1,7 +1,27 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  CFigure.cpp
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(84,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(85,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(87,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\ITI\C++\hossamsalah22\Paint-For-Kids\Figures\CFigure.cpp(88,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  ApplicationManager.cpp
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(228,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(231,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(232,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(257,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(259,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(260,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(265,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(267,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(268,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(182,8): warning C4101: 'p': unreferenced local variable
+  PickByType.cpp
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(126,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(129,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(130,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(162,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(164,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(165,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(170,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(172,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(173,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\Actions\PickByType.cpp(72,8): warning C4101: 'p': unreferenced local variable
+  Generating Code...
+D:\ITI\C++\hossamsalah22\Paint-For-Kids\ApplicationManager.cpp(474): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
   PT-Project.vcxproj -> D:\ITI\C++\hossamsalah22\Paint-For-Kids\Debug\PT Project.exe

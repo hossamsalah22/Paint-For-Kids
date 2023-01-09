@@ -5,10 +5,11 @@
 
 class PickByType : public Action
 {
+	
 public:
 	PickByType(ApplicationManager* pApp);
 	void Execute();
-
+	void Select(Point p);
 };
 
 #endif

@@ -16,4 +16,6 @@ public:
 	void Load(ifstream&);
 };
 
+bool isInside(int x, int y);
+
 #endif

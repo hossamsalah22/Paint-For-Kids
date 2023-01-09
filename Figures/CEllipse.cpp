@@ -61,3 +61,4 @@ void CEllipse::Load(ifstream& Infile) {
 	this->FigGfxInfo.BorderWdth = 3; //pass 3 as a default value for borderWidth
 	this->SetSelected(false);
 }
+

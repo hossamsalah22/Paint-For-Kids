@@ -61,4 +61,5 @@ void CSquare::Load(ifstream& Infile) {
 	
 	this->FigGfxInfo.BorderWdth = 3; //pass 3 as default value for borderWidth
 	this->SetSelected(false);
+
 }
