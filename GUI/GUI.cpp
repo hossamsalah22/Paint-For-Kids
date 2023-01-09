@@ -49,7 +49,7 @@ bool GUI::GetPointClicked(int& x, int& y) const
 	int MenuItemsCount;
 	switch (UI.InterfaceMode) {
 	case MODE_DRAW:
-		MenuItemsCount = 21;
+		MenuItemsCount = 19;
 		break;
 	case MODE_PLAY:
 		MenuItemsCount = 5;
@@ -121,6 +121,7 @@ ActionType GUI::MapInputToActionType(int _x, int _y) const
 			case ITM_LOAD: return LOAD;
 			case ITM_BACK: return SEND_BACK;
 			case ITM_FRNT: return BRNG_FRNT;
+			case ITM_MOV: return MOVE;
 			case ITM_PLAY: return TO_PLAY;
 			case ITM_RSZ_QRT: return QUARTERED_RESIZE;
 			case ITM_RSZ_HALF: return HALFED_RESIZE;
@@ -226,8 +227,8 @@ void GUI::CreateDrawToolBar() const
 	MenuItemImages[ITM_FRNT] = "images\\MenuItems\\MenuBringFront.jpg";
 	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\MenuSave.jpg";
 	MenuItemImages[ITM_LOAD] = "images\\MenuItems\\MenuLoad.jpg";
-	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\MenuUndo.jpg";
-	MenuItemImages[ITM_REDO] = "images\\MenuItems\\MenuRedo.jpg";
+	//MenuItemImages[ITM_UNDO] = "images\\MenuItems\\MenuUndo.jpg";
+	//MenuItemImages[ITM_REDO] = "images\\MenuItems\\MenuRedo.jpg";
 	MenuItemImages[ITM_PLAY] = "images\\MenuItems\\MenuSwitchMode.jpg";
 	MenuItemImages[ITM_EXIT_DRAW] = "images\\MenuItems\\MenuExit.jpg";
 

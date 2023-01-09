@@ -102,6 +102,9 @@ Action* ApplicationManager::CreateAction(ActionType ActType)
 		case QUADRUPLE_RESIZED: // Resize a figure to quadruple of it's current size
 			newAct = new ActionResize(this, 4);
 			break;
+		case MOVE:
+			newAct = new ActionMove(this);
+			break;
 		case TO_PLAY:
 			newAct = new ActionToPlay(this);
 			break;
@@ -165,15 +168,11 @@ void ApplicationManager::AddFigure(CFigure* pFig)
 		FigList[FigCount++] = pFig;	
 }
 ////////////////////////////////////////////////////////////////////////////////////
-CFigure *ApplicationManager::GetFigure(int x, int y) const
+CFigure* ApplicationManager::GetFigure() const
 {
-	//If a figure is found return a pointer to it.
-	//if this point (x,y) does not belong to any figure return NULL
-
-
-	///Add your code here to search for a figure given a point x,y	
-
-	return NULL;
+	for (int i = 0; i < FigCount; i++)
+		if (FigList[i]->IsSelected())
+			return FigList[i];
 }
 
 
@@ -371,7 +370,7 @@ void ApplicationManager::UpdateInterface() const
 	pGUI->ClearDrawArea();
 	for (int i = 0; i < FigCount; i++) {
 		if(!FigList[i]->IsHidden())
-		FigList[i]->DrawMe(pGUI);		//Call Draw function (virtual member fn)
+			FigList[i]->DrawMe(pGUI);		//Call Draw function (virtual member fn)
 	}
 }
 

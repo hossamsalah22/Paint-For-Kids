@@ -34,8 +34,8 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_FRNT,		//Bring shape to front
 	ITM_SAVE,		//Save graph
 	ITM_LOAD,		//Load graph
-	ITM_UNDO,		//Undo action
-	ITM_REDO,		//Redo action
+//	ITM_UNDO,		//Undo action
+//	ITM_REDO,		//Redo action
 	ITM_PLAY,		//Switch mode
 	ITM_EXIT_DRAW,		//Exit item
 	

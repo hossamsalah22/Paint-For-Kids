@@ -7,7 +7,7 @@ ActionSelect::ActionSelect(ApplicationManager* pApp) :Action(pApp)
 void ActionSelect::Execute()
 {
 	Point P;
-	
+
 	//Get a Pointer to the Interface
 	GUI* pGUI = pManager->GetGUI();
 
@@ -32,4 +32,5 @@ void ActionSelect::Execute()
 			pManager->SelectFigure(P);
 		pManager->UpdateInterface();
 	}
+	pManager->ResetPoint();
 }

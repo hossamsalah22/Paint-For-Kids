@@ -12,7 +12,7 @@ class ActionSelect : public Action
 public:
 	ActionSelect(ApplicationManager* pApp);
 
-	//Add Square to the ApplicationManager
+	//Add Selection Action to the ApplicationManager
 	virtual void Execute();
 
 };

@@ -51,6 +51,7 @@ public:
 	//virtual void PrintInfo(Output* pOut) = 0;	//print all figure info on the status bar
 
 	bool Resize(GUI* pGUI, float factor);	//Resize the figure
+	void Move(Point P1, Point P2); //Move the figure
 	bool IsHidden();
 	void Hide();
 	void show();

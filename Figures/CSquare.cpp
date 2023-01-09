@@ -39,7 +39,7 @@ void CSquare::Save(ofstream& OutFile) {
 
 void CSquare::Load(ifstream& Infile) {
 
-	string s;
+	string squareData;
 	Infile
 		>> ID 
 		>> P1.x 
@@ -47,19 +47,19 @@ void CSquare::Load(ifstream& Infile) {
 		>> P2.x 
 		>> P2.y;
 	
-	Infile >> s;
-	FigGfxInfo.DrawClr = this->ColorObject(s);
+	Infile >> squareData;
+	FigGfxInfo.DrawClr = this->ColorObject(squareData);
 
-	Infile >> s;
-	if (s == "NO_FILL")
+	Infile >> squareData;
+	if (squareData == "NO_FILL")
 		FigGfxInfo.isFilled = false;
 	else
 	{
-		FigGfxInfo.FillClr = this->ColorObject(s);
+		FigGfxInfo.FillClr = this->ColorObject(squareData);
 		FigGfxInfo.isFilled = true;
 	}
-	
-	this->FigGfxInfo.BorderWdth = 3; //pass 3 as default value for borderWidth
+	this->show();
+	this->FigGfxInfo.BorderWdth = 5; //pass 3 as default value for borderWidth
 	this->SetSelected(false);
 
 }

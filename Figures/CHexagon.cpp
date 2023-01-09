@@ -37,24 +37,25 @@ else
 }
 
 void CHexagon::Load(ifstream& Infile) {
-	string s;
+	string hexagonData;
 	Infile >> ID
 		>> P1.x
 		>> P1.y
 		>> P2.x
 		>> P2.y;
 
-		Infile >> s;
-		FigGfxInfo.DrawClr = this->ColorObject(s);
+		Infile >> hexagonData;
+		FigGfxInfo.DrawClr = this->ColorObject(hexagonData);
 
-		Infile >> s;
-		if (s == "NO_FILL")
+		Infile >> hexagonData;
+		if (hexagonData == "NO_FILL")
 			FigGfxInfo.isFilled = false;
 		else
 		{
-			FigGfxInfo.FillClr = this->ColorObject(s);
+			FigGfxInfo.FillClr = this->ColorObject(hexagonData);
 			FigGfxInfo.isFilled = true;
 		}
-	this->FigGfxInfo.BorderWdth = 3; //pass 3 as default value for borderWidth
+		this->show();
+	this->FigGfxInfo.BorderWdth = 5; //pass 3 as default value for borderWidth
 	this->SetSelected(false);
 }
