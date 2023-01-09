@@ -49,7 +49,7 @@ bool GUI::GetPointClicked(int& x, int& y) const
 	int MenuItemsCount;
 	switch (UI.InterfaceMode) {
 	case MODE_DRAW:
-		MenuItemsCount = 21;
+		MenuItemsCount = 19;
 		break;
 	case MODE_PLAY:
 		MenuItemsCount = 5;
@@ -227,8 +227,8 @@ void GUI::CreateDrawToolBar() const
 	MenuItemImages[ITM_FRNT] = "images\\MenuItems\\MenuBringFront.jpg";
 	MenuItemImages[ITM_SAVE] = "images\\MenuItems\\MenuSave.jpg";
 	MenuItemImages[ITM_LOAD] = "images\\MenuItems\\MenuLoad.jpg";
-	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\MenuUndo.jpg";
-	MenuItemImages[ITM_REDO] = "images\\MenuItems\\MenuRedo.jpg";
+	//MenuItemImages[ITM_UNDO] = "images\\MenuItems\\MenuUndo.jpg";
+	//MenuItemImages[ITM_REDO] = "images\\MenuItems\\MenuRedo.jpg";
 	MenuItemImages[ITM_PLAY] = "images\\MenuItems\\MenuSwitchMode.jpg";
 	MenuItemImages[ITM_EXIT_DRAW] = "images\\MenuItems\\MenuExit.jpg";
 
