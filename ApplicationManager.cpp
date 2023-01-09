@@ -6,8 +6,8 @@ ApplicationManager::ApplicationManager()
 	//Create Input and output
 	pGUI = new GUI;	
 	
-	FigCount = 0;
-
+	FigCount = TempFigCount = 0;
+	IntoPlayMode = false;
 	x = y = -1;
 		
 	//Create an array of figure pointers and set them to NULL		
@@ -106,17 +106,16 @@ Action* ApplicationManager::CreateAction(ActionType ActType)
 		case TO_PLAY:
 			newAct = new ActionToPlay(this);
 			break;
-			/*	//Play Mode Actions//
-			case P_H_TYPE:
-				newAct = new PickByType(this);
-				break;
-
-			case P_H_FILL:
-				newAct = new PickByFill(this);
-				break;
-			case P_H_BOTH:
-				newAct = new PickByBoth(this);
-				break;*/
+			//Play Mode Actions//
+		case P_H_TYPE:
+			newAct = new PickByType(this);
+			break;
+		case P_H_FILL:
+			newAct = new PickByFill(this);
+			break;
+		case P_H_BOTH:
+			newAct = new PickByBoth(this);
+			break;
 		case TO_DRAW:
 			newAct = new ActionToDraw(this);
 			break;
@@ -178,6 +177,7 @@ CFigure *ApplicationManager::GetFigure(int x, int y) const
 	return NULL;
 }
 
+
 void ApplicationManager::SelectFigure(Point P) const //Return All figures
 {
 	Point p;
@@ -213,9 +213,12 @@ void ApplicationManager::SelectFigure(Point P) const //Return All figures
 				{
 					if (FigList[i]->IsSelected())
 						FigList[i]->SetSelected(false);
-					else
+					else {
 						FigList[i]->SetSelected(true);
-
+						if (IntoPlayMode) {
+							FigList[i]->Hide();
+						}
+					}
 					break;
 				}
 			}
@@ -233,9 +236,12 @@ void ApplicationManager::SelectFigure(Point P) const //Return All figures
 				{
 					if (FigList[i]->IsSelected())
 						FigList[i]->SetSelected(false);
-					else
+					else {
 						FigList[i]->SetSelected(true);
-
+						if (IntoPlayMode) {
+							FigList[i]->Hide();
+						}
+					}
 					break;
 				}
 			}
@@ -265,9 +271,12 @@ void ApplicationManager::SelectFigure(Point P) const //Return All figures
 				{
 					if (FigList[i]->IsSelected())
 						FigList[i]->SetSelected(false);
-					else
+					else {
 						FigList[i]->SetSelected(true);
-
+						if (IntoPlayMode) {
+							FigList[i]->Hide();
+						}
+					}
 					break;
 				}
 			}
@@ -360,8 +369,10 @@ int ApplicationManager::getFigCount() const
 void ApplicationManager::UpdateInterface() const
 {
 	pGUI->ClearDrawArea();
-	for (int i = 0; i < FigCount; i++)
+	for (int i = 0; i < FigCount; i++) {
+		if(!FigList[i]->IsHidden())
 		FigList[i]->DrawMe(pGUI);		//Call Draw function (virtual member fn)
+	}
 }
 
 // Clear draw area 
@@ -513,4 +524,41 @@ int ApplicationManager::ExitMessage()
 
 
 	return msgboxID;
+}
+
+void ApplicationManager::getFigureList(int figures[3]) {
+	for (int i = 0; i < FigCount; i++) {
+		if (FigList[i]->GetID() == 0)
+			figures[0] = 1;
+		if (FigList[i]->GetID() == 1)
+			figures[1] = 1;
+		if (FigList[i]->GetID() == 2)
+			figures[2] = 1;
+	}
+}
+
+void ApplicationManager::saveBeforePlay() {
+	TempFigCount = FigCount;
+	for (int i = 0; i < FigCount; i++) {
+		TempFigList[i] = FigList[i];
+	}
+}
+
+void ApplicationManager::loadBeforeDraw() {
+	FigCount = TempFigCount;
+	for (int i = 0; i < FigCount; i++) {
+		FigList[i] = TempFigList[i];
+	}
+}
+
+void ApplicationManager::show() {
+	for (int i = 0; i < FigCount; i++) {
+		FigList[i]->show();
+	}
+}
+void ApplicationManager::ToPlay() {
+	IntoPlayMode = true;
+}
+void ApplicationManager::ToDraw() {
+	IntoPlayMode = false;
 }

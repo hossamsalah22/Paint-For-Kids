@@ -20,6 +20,9 @@
 #include "Actions\ActionToPlay.h"
 #include "Actions\ActionToDraw.h"
 #include "Actions\ActionResize.h"
+#include "Actions\PickByType.h"
+#include "Actions\PickByBoth.h"
+#include "Actions\PickByFill.h"
 #include <math.h>
 #include<fstream>
 #include <string>
@@ -33,7 +36,10 @@ class ApplicationManager
 
 private:
 	int FigCount;		//Actual number of figures
+	int TempFigCount;		//Actual number of figures
 	CFigure* FigList[MaxFigCount];	//List of all figures (Array of pointers)
+	CFigure* TempFigList[MaxFigCount];	//List of all figures (Array of pointers)
+	bool IntoPlayMode;
 
 	//Pointers to Input and Output classes
 	GUI* pGUI;
@@ -81,6 +87,12 @@ public:
 	int DeleteFigure(); //// Action Delete Figures  
 	void shiftFigList(int _figCount); // After delete figure shift elements and delete null
 	int ExitMessage(); //// Action Delete Figures  
+	void getFigureList(int figures[3]);
+	void saveBeforePlay();
+	void loadBeforeDraw();
+	void show();
+	void ToPlay();
+	void ToDraw();
 };
 
 #endif
