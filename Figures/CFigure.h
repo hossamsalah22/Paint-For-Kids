@@ -54,6 +54,7 @@ public:
 	bool IsHidden();
 	void Hide();
 	void show();
+	void Move(Point P1, Point P2); //Move the figure
 };
 
 #endif

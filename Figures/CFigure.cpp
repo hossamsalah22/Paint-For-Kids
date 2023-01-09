@@ -117,3 +117,9 @@ void CFigure::Hide() {
 void CFigure::show() {
 	FigGfxInfo.IsHidden = false;
 };
+
+void CFigure::Move(Point P1, Point P2)
+{
+	this->P1 = P1;
+	this->P2 = P2;
+}

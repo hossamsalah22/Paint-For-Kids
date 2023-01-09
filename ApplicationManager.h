@@ -23,6 +23,7 @@
 #include "Actions\PickByType.h"
 #include "Actions\PickByBoth.h"
 #include "Actions\PickByFill.h"
+#include "Actions\ActionMove.h"
 #include <math.h>
 #include<fstream>
 #include <string>
@@ -63,7 +64,7 @@ public:
 
 	// -- Figures Management Functions
 	void AddFigure(CFigure* pFig); //Adds a new figure to the FigList
-	CFigure *GetFigure(int x, int y) const; //Search for a figure given a point inside the figure
+	CFigure *GetFigure() const; //Search for a figure given a point inside the figure
 	void SelectFigure(Point P) const; //Return All figures
 	void UpdateFigureColor(color _color) const; //Update border color of selected figure(s)
 	void UpdateFigureFill(color _color, bool isFilled = true) const; //Update fill color of selected figure(s)

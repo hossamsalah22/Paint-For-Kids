@@ -1,6 +1,73 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  CSquare.cpp
-  CHexagon.cpp
-  CEllipse.cpp
+  ApplicationManager.cpp
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(234,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(237,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(238,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(262,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(264,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(265,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(270,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(272,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(273,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(188,8): warning C4101: 'p': unreferenced local variable
+  ActionMove.cpp
   Generating Code...
-  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
+D:\ITI\01- Still\C++(OOP)\Working test\ApplicationManager.cpp(479): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+  Skipping... (no relevant changes detected)
+  main.cpp
+  PickByType.cpp
+  PickByFill.cpp
+  PickByBoth.cpp
+  ActionToPlay.cpp
+  ActionToDraw.cpp
+  ActionSendBack.cpp
+  ActionSelect.cpp
+  ActionSave.cpp
+  ActionResize.cpp
+  ActionLoad.cpp
+  ActionDelete.cpp
+  ActionChangeFill.cpp
+  ActionChangeColor.cpp
+  ActionChangeBackground.cpp
+  ActionBringFront.cpp
+  ActionAddSquare.cpp
+  ActionAddHexagon.cpp
+  ActionAddEllipse.cpp
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+jutils.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jquant2.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jquant1.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jmemnobs.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jmemmgr.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctred.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctint.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctfst.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jidctflt.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jerror.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdtrans.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdsample.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdpostct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdphuff.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmerge.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmaster.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmarker.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdmainct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdinput.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdhuff.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jddctmgr.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdcolor.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdcoefct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdatasrc.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdapistd.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jdapimin.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jcparam.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jcomapi.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+windowinput.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+mousequeue.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+keyqueue.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+jpegload.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+image.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+colors.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+CMUgraphics.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+auxil.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Working test\Debug\PT Project.exe
