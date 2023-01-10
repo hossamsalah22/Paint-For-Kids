@@ -16,7 +16,7 @@ CEllipse::CEllipse() {}; //default constructor
 
 void CEllipse::DrawMe(GUI* pGUI) const
 {
-	//Call Output::DrawRect to draw a Square on the screen	
+	//Call Output::DrawRect to draw a Ellipse on the screen	
 	pGUI->DrawEllipse(P1, P2, FigGfxInfo, Selected);
 }
 
@@ -30,7 +30,7 @@ void CEllipse::Save(ofstream& OutFile) {
 		<< this->P2.x << "\t"
 		<< this->P2.y << "\t"
 		<< this->ColorString(this->FigGfxInfo.DrawClr) << "\t";
-
+		// check figure is filled or not
 		if (this->FigGfxInfo.isFilled)
 			OutFile << this->ColorString(this->FigGfxInfo.FillClr) << "\n";
 		else
@@ -58,7 +58,7 @@ void CEllipse::Load(ifstream& Infile) {
 		FigGfxInfo.isFilled = true;
 	}
 	this->show();
-	this->FigGfxInfo.BorderWdth = 5; //pass 3 as a default value for borderWidth
+	this->FigGfxInfo.BorderWdth = 5;
 	this->SetSelected(false);
 }
 

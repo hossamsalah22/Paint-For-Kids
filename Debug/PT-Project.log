@@ -1,71 +1,115 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-<<<<<<< HEAD
-  CEllipse.cpp
-ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
-jutils.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jquant2.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jquant1.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jmemnobs.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jmemmgr.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jidctred.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jidctint.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jidctfst.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jidctflt.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jerror.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdtrans.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdsample.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdpostct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdphuff.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdmerge.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdmaster.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdmarker.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdmainct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdinput.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdhuff.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jddctmgr.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdcolor.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdcoefct.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdatasrc.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdapistd.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jdapimin.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jcparam.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jcomapi.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-windowinput.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-mousequeue.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-keyqueue.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-jpegload.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-image.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-colors.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-CMUgraphics.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-auxil.obj : warning LNK4204: '' is missing debugging information for referencing module; linking object as if no debug info
-  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
-=======
-  ActionAddEllipse.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
   main.cpp
+  ApplicationManager.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(227,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(230,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(231,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(256,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(258,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(259,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(264,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(266,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(267,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(181,8): warning C4101: 'p': unreferenced local variable
   GUI.cpp
+  ActionAddSquare.cpp
   CSquare.cpp
   CHexagon.cpp
   CFigure.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(84,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(85,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(87,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(88,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   CEllipse.cpp
-  ApplicationManager.cpp
+  windowinput.cpp
+  mousequeue.cpp
+  keyqueue.cpp
+  image.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\image.cpp(115,29): warning C4018: '<': signed/unsigned mismatch
+  colors.cpp
+  CMUgraphics.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(257,9): warning C4101: 'iX': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(257,13): warning C4101: 'iY': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(751,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1164,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1171,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1202,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1210,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1357,23): warning C4018: '>': signed/unsigned mismatch
+  auxil.cpp
   PickByType.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(123,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(126,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(127,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(159,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(161,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(162,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(167,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(169,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(170,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(69,8): warning C4101: 'p': unreferenced local variable
   PickByFill.cpp
   PickByBoth.cpp
   ActionToPlay.cpp
   ActionToDraw.cpp
+  Generating Code...
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(176): warning C4715: 'ApplicationManager::GetFigure': not all control paths return a value
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(473): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+  Compiling...
+  ActionBringFront.cpp
   ActionSendBack.cpp
   ActionSelect.cpp
   ActionSave.cpp
   ActionResize.cpp
+  ActionMove.cpp
   ActionLoad.cpp
   ActionDelete.cpp
   ActionChangeFill.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeFill.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   ActionChangeColor.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeColor.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   ActionChangeBackground.cpp
-  ActionBringFront.cpp
-  ActionAddSquare.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeBackground.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   ActionAddHexagon.cpp
-  PT-Project.vcxproj -> D:\ITI\C++\hossamsalah22\Paint-For-Kids\Debug\PT Project.exe
->>>>>>> af1716d373e16385375fb318fdc59e285bd7c60e
+  ActionAddEllipse.cpp
+  Generating Code...
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  jutils.c
+  jquant2.c
+  jquant1.c
+  jmemnobs.c
+  jmemmgr.c
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jmemmgr.c(1103,19): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jmemmgr.c(1106,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jidctred.c
+  jidctint.c
+  jidctfst.c
+  jidctflt.c
+  jerror.c
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jerror.c(169,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jerror.c(171,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jdtrans.c
+  jdsample.c
+  jdpostct.c
+  jdphuff.c
+  jdmerge.c
+  jdmaster.c
+  jdmarker.c
+  jdmainct.c
+  jdinput.c
+  jdhuff.c
+  Generating Code...
+  Compiling...
+  jddctmgr.c
+  jdcolor.c
+  jdcoefct.c
+  jdatasrc.c
+  jdapistd.c
+  jdapimin.c
+  jcparam.c
+  jcomapi.c
+  jpegload.c
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpegload.c(23,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe

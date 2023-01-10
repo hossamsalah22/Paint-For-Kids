@@ -90,19 +90,19 @@ bool CFigure::Resize(GUI* pGUI, float factor) {
 	while (lenDeff < 10) {
 		return false;
 	}
-		if (resizedTopLeftX > 0 && resizedTopLeftX < UI.width
-			&& resizedTopLeftY > UI.ToolBarHeight && resizedTopLeftY < UI.height - UI.StatusBarHeight
-			&& resizedBottomRightX > 0 && resizedBottomRightX < UI.width
-			&& resizedBottomRightY > UI.ToolBarHeight && resizedBottomRightY < UI.height - UI.StatusBarHeight) {
+	if (resizedTopLeftX > 0 && resizedTopLeftX < UI.width
+		&& resizedTopLeftY > UI.ToolBarHeight && resizedTopLeftY < UI.height - UI.StatusBarHeight
+		&& resizedBottomRightX > 0 && resizedBottomRightX < UI.width
+		&& resizedBottomRightY > UI.ToolBarHeight && resizedBottomRightY < UI.height - UI.StatusBarHeight) {
 
-			P1.x = resizedTopLeftX;
-			P1.y = resizedTopLeftY;
-			P2.x = resizedBottomRightX;
-			P2.y = resizedBottomRightY;
+		P1.x = resizedTopLeftX;
+		P1.y = resizedTopLeftY;
+		P2.x = resizedBottomRightX;
+		P2.y = resizedBottomRightY;
 
-			return true;
-		}
-		return false;
+		return true;
+	}
+	return false;
 }
 
 bool CFigure::IsHidden() {
