@@ -31,12 +31,6 @@ void ActionAddHexagon::Execute()
 			return;
 		}
 
-		if (P1.x > 1070 && P1.x < 1200 && P1.y < UI.ToolBarHeight) //Exit Action
-		{
-			pGUI->ClearStatusBar();
-			break;
-		}
-
 		if (!(P1.y > UI.ToolBarHeight && P1.y < UI.height - UI.StatusBarHeight)) {
 			validAction = false;
 			P2 = P1;
@@ -68,12 +62,6 @@ void ActionAddHexagon::Execute()
 				pManager->SetPoint(P2.x, P2.y);
 				return;
 			}
-
-		if (P2.x > 1070 && P2.x < 1200 && P2.y < UI.ToolBarHeight) //Exit Action
-		{
-			pGUI->ClearStatusBar();
-			break;
-		}
 
 		if (!(P2.y > UI.ToolBarHeight && P2.y < UI.height - UI.StatusBarHeight))
 			validAction = false;

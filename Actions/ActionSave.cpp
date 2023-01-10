@@ -23,7 +23,7 @@ void ActionSave::Execute()
 	GUI* pGUI = pManager->GetGUI();
 
 	ofstream OutFile;   //object of ofstream to write on the disk
-	OutFile.open("SavedFiles\\" + FileName + ".txt");  // create a file with FileName and .txt exetention
+	OutFile.open("SavedFiles\\" + FileName + ".txt");  // create a text file to save each figure details
 
 	//adding UI info to the output
 	OutFile << pManager->colorString(UI.DrawColor)
@@ -32,11 +32,11 @@ void ActionSave::Execute()
 	OutFile << FigCnt << "\n";
 
 
-	pManager->SaveAll(OutFile);  //Now Start Saving each figure proccess 
+	pManager->SaveAll(OutFile);  //Saving each figure details
 	OutFile.close();
 	pGUI->PrintMessage("File Saved!");
 
-	if (fireExit)
+	if (fireExit) {
 		exit(0);
-
+	}
 }
