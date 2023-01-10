@@ -22,11 +22,6 @@ void ActionSelect::Execute()
 			return;
 		}
 
-		if (P.x > 1070 && P.x < 1200 && P.y < UI.ToolBarHeight) //Exit Action
-		{
-			pGUI->ClearStatusBar();
-			break;
-		}
 
 		if (P.y > UI.ToolBarHeight && P.y < UI.height - UI.StatusBarHeight)
 			pManager->SelectFigure(P);
