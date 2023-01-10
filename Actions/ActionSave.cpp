@@ -5,7 +5,7 @@ ActionSave::ActionSave(ApplicationManager* pApp, int FigCount, bool exit = false
 {
 	FileName = "temp_name";
 	FigCnt = FigCount;
-	fireExit = exit;	
+	fireExit = exit;
 }
 
 void ActionSave::ReadActionParameters()
@@ -13,13 +13,13 @@ void ActionSave::ReadActionParameters()
 	GUI* pGUI = pManager->GetGUI();
 	pGUI->ClearStatusBar();
 	pGUI->PrintMessage("Enter File Name");
-	FileName = pGUI->GetSrting();  //read the file name
+	FileName = pGUI->GetSrting(); 
 }
 
 void ActionSave::Execute()
 {
 	pManager->ResetPoint();
-	ReadActionParameters();     //get the parameters
+	ReadActionParameters();
 	GUI* pGUI = pManager->GetGUI();
 
 	ofstream OutFile;   //object of ofstream to write on the disk
@@ -30,7 +30,6 @@ void ActionSave::Execute()
 		<< "\t" << pManager->colorString(UI.FillColor)
 		<< "\t" << pManager->colorString(UI.BkGrndColor) << "\n";
 	OutFile << FigCnt << "\n";
-
 
 	pManager->SaveAll(OutFile);  //Saving each figure details
 	OutFile.close();

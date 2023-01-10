@@ -11,12 +11,11 @@ PickByBoth::PickByBoth(ApplicationManager* pApp) :Action(pApp)
 	FigID = -1;
 	pManager->getFigureList(FigAvailList);
 	FigCount = pManager->getCounter();
-	
+	PickByBoth::getRandomFigure();
 	pGUI->CreatePlayToolBar();
 	colorCounter = PickByBoth::NumOfColors();
 	if (FigCount == 0) { pGUI->PrintMessage("no figures to select"); }
 	else {
-		PickByBoth::getRandomFigure();
 		string pickMessage;
 		if (FigID == 0) {
 			pickMessage = "pick All squares with color : " + pickColorString;

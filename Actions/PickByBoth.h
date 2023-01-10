@@ -25,7 +25,7 @@ public:
 	void Execute();
 	void Select(Point P);
 	bool IsThereAColor();
-	//void randomColor();
+	void randomColor();
 	void getRandomFigure();
 	int NumOfColors();
 };

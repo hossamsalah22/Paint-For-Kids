@@ -1,27 +1,137 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.cpp
+  ApplicationManager.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(227,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(230,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(231,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(256,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(258,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(259,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(264,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(266,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(267,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(181,8): warning C4101: 'p': unreferenced local variable
+  GUI.cpp
+  ActionAddSquare.cpp
+  CSquare.cpp
+  CHexagon.cpp
+  CFigure.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(96,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(97,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(99,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Figures\CFigure.cpp(100,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  CEllipse.cpp
+  windowinput.cpp
+  mousequeue.cpp
+  keyqueue.cpp
+  image.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\image.cpp(115,29): warning C4018: '<': signed/unsigned mismatch
+  colors.cpp
+  CMUgraphics.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(257,9): warning C4101: 'iX': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(257,13): warning C4101: 'iY': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(751,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1164,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1171,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1202,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1210,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\CMUgraphics.cpp(1357,23): warning C4018: '>': signed/unsigned mismatch
+  auxil.cpp
+  PickByType.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(124,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(127,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(128,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(161,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(163,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(164,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(169,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(171,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(172,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByType.cpp(69,8): warning C4101: 'p': unreferenced local variable
   PickByFill.cpp
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(107,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(110,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(111,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(144,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(146,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(147,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(152,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(154,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(155,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(52,8): warning C4101: 'p': unreferenced local variable
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(194,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(106,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(109,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(110,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(143,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(145,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(146,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(151,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(153,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(154,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(51,8): warning C4101: 'p': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByFill.cpp(193,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   PickByBoth.cpp
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(114,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(117,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(118,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(151,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(153,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(154,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(159,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(161,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(162,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(59,8): warning C4101: 'p': unreferenced local variable
-D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(201,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(113,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(116,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(117,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(150,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(152,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(153,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(158,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(160,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(161,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(58,8): warning C4101: 'p': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\PickByBoth.cpp(200,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ActionToPlay.cpp
+  ActionToDraw.cpp
   Generating Code...
-  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Working test\Debug\PT Project.exe
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(176): warning C4715: 'ApplicationManager::GetFigure': not all control paths return a value
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\ApplicationManager.cpp(473): warning C4715: 'ApplicationManager::DeleteFigure': not all control paths return a value
+  Compiling...
+  ActionBringFront.cpp
+  ActionSendBack.cpp
+  ActionSelect.cpp
+  ActionSave.cpp
+  ActionResize.cpp
+  ActionMove.cpp
+  ActionLoad.cpp
+  ActionDelete.cpp
+  ActionChangeFill.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeFill.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ActionChangeColor.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeColor.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ActionChangeBackground.cpp
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Actions\ActionChangeBackground.cpp(18,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ActionAddHexagon.cpp
+  ActionAddEllipse.cpp
+  Generating Code...
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  jutils.c
+  jquant2.c
+  jquant1.c
+  jmemnobs.c
+  jmemmgr.c
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jmemmgr.c(1103,19): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jmemmgr.c(1106,11): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jidctred.c
+  jidctint.c
+  jidctfst.c
+  jidctflt.c
+  jerror.c
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jerror.c(169,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpeg\jerror.c(171,5): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  jdtrans.c
+  jdsample.c
+  jdpostct.c
+  jdphuff.c
+  jdmerge.c
+  jdmaster.c
+  jdmarker.c
+  jdmainct.c
+  jdinput.c
+  jdhuff.c
+  Generating Code...
+  Compiling...
+  jddctmgr.c
+  jdcolor.c
+  jdcoefct.c
+  jdatasrc.c
+  jdapistd.c
+  jdapimin.c
+  jcparam.c
+  jcomapi.c
+  jpegload.c
+D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\CMUgraphicsLib\jpegload.c(23,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+ActionAddEllipse.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe

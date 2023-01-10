@@ -257,9 +257,9 @@ void GUI::CreatePlayToolBar() const
 	pWind->DrawRectangle(0, 0, UI.width, UI.height - UI.ToolBarHeight);
 
 	string MenuItemImages2[PLAY_ITM_COUNT];
-	MenuItemImages2[ITM_P_H_TYPE] = "images\\PlayModeButtons\\MenuPlayMode2.jpg";
-	MenuItemImages2[ITM_P_H_FILL] = "images\\PlayModeButtons\\MenuPlayMode3.jpg";
-	MenuItemImages2[ITM_P_H_BOTH] = "images\\PlayModeButtons\\MenuPlayMode1.jpg";
+	MenuItemImages2[ITM_P_H_TYPE] = "images\\PlayModeButtons\\MenuPlayMode1.jpg";
+	MenuItemImages2[ITM_P_H_FILL] = "images\\PlayModeButtons\\MenuPlayMode2.jpg";
+	MenuItemImages2[ITM_P_H_BOTH] = "images\\PlayModeButtons\\MenuPlayMode3.jpg";
 	MenuItemImages2[ITM_TO_DRAW] = "images\\PlayModeButtons\\MenuSwitchMode.jpg";
 	MenuItemImages2[ITM_EXIT_PLAY] = "images\\MenuItems\\MenuExit.jpg";
 

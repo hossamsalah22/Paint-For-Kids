@@ -55,7 +55,7 @@ void ActionLoad::Execute()
 	char openedFileName[MAX_PATH];
 
 	GUI* pGUI = pManager->GetGUI();
-	ifstream InputFile;   //object of ofstream to write on the disk
+	ifstream InputFile;   //object of ifstream to write on the disk
 	if (ReadFileLocation(openedFileName))
 	{
 		InputFile.open(openedFileName);  // openedFileName holds the path of the loaded file
