@@ -13,7 +13,7 @@ PickByFill::PickByFill(ApplicationManager* pApp) :Action(pApp)
 	FigID = -1;
 	pManager->getFigureList(FigAvailList);
 	FigCount = pManager->getCounter();
-		pickColorString = PickByFill::getRandomFigure();
+	pickColorString = PickByFill::getRandomFigure();
 	pGUI->CreatePlayToolBar();
 	colorCounter = PickByFill::NumOfColors();
 	if(FigCount==0){ pGUI->PrintMessage("no figures to select"); }
