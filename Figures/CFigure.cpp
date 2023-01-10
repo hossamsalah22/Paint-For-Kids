@@ -41,6 +41,18 @@ void CFigure::ChngFillStts(bool isFilled)
 	FigGfxInfo.isFilled = isFilled;
 }
 
+bool CFigure::IsFilled() {
+	return FigGfxInfo.isFilled;
+}
+
+string CFigure::getFilledColor()
+{
+	if (FigGfxInfo.isFilled)
+		return ColorString(FigGfxInfo.FillClr);
+	else
+		return "NON-FILLED";
+}
+
 
 string CFigure::ColorString(color ClrObj) const  //Convert from Color Type to String Type
 {

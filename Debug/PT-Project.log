@@ -1,8 +1,27 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  GUI.cpp
-  ActionSelect.cpp
-  ActionAddSquare.cpp
-  ActionAddHexagon.cpp
-  ActionAddEllipse.cpp
+  PickByFill.cpp
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(107,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(110,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(111,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(144,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(146,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(147,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(152,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(154,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(155,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(52,8): warning C4101: 'p': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByFill.cpp(194,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  PickByBoth.cpp
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(114,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(117,42): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(118,41): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(151,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(153,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(154,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(159,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(161,12): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(162,12): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(59,8): warning C4101: 'p': unreferenced local variable
+D:\ITI\01- Still\C++(OOP)\Working test\Actions\PickByBoth.cpp(201,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe
+  PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Working test\Debug\PT Project.exe
