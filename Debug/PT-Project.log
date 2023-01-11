@@ -1,3 +1,25 @@
 ﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  ActionAddEllipse.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  ApplicationManager.cpp
+  PickByType.cpp
+  PickByFill.cpp
+  PickByBoth.cpp
   ActionToPlay.cpp
+  ActionToDraw.cpp
+  ActionSendBack.cpp
+  ActionSelect.cpp
+  ActionSave.cpp
+  ActionResize.cpp
+  ActionMove.cpp
+  ActionLoad.cpp
+  ActionDelete.cpp
+  ActionChangeFill.cpp
+  ActionChangeColor.cpp
+  ActionChangeBackground.cpp
+  ActionBringFront.cpp
+  ActionAddSquare.cpp
+  ActionAddHexagon.cpp
   PT-Project.vcxproj -> D:\ITI\01- Still\C++(OOP)\Paint-For-Kids\Paint-For-Kids\Debug\PT Project.exe

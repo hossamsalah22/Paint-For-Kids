@@ -82,7 +82,7 @@ Action* ApplicationManager::CreateAction(ActionType ActType)
 			newAct = new ActionLoad(this, FigCount);
 			break;
 		case DEL:
-			newAct= new ActionDelete(this);
+			newAct = new ActionDelete(this);
 			break;
 		case SEND_BACK:	//Send a figure to the back of all figures
 			newAct = new ActionSendBack(this);
@@ -494,6 +494,12 @@ ApplicationManager::~ApplicationManager()
 	delete pGUI;
 	
 }
+
+
+//==================================================================================//
+//							------Delete WINDOW----------      						//
+//==================================================================================//
+
 
 
 //==================================================================================//
